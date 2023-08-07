@@ -168,6 +168,37 @@ body {
   background-color: #423A39;
 }
 
+.Main {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.Project {
+  text-decoration: none;
+  color: #788F74;
+  margin: 0;
+}
+
+.Project:hover {
+  background-color: #423A39;
+  color: #8F8F8F;
+}
+
+.Project img {
+  max-width: 480px;
+  width: 100%;
+}
+@media (min-width: 480px) {
+  .Project img {
+    width: 480px;
+  }
+}
+
+.ProjectDetails {
+  padding: 0 1rem;
+}
+
 /*07-07-2023-09-10-business-card*/
 .BusinessCard {
   width: 100vw;

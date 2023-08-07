@@ -69,7 +69,15 @@ $home-cta: #56A879;
                     .MenuListItem { list-style: none; margin-left: 0; padding: 1rem; font-size: 1.5rem; }
                     .MenuListItem:hover, .MenuListItem:focus { background-color: $home-dark; }
                         .HomeMenuLink {  }
-
+        .Main { display: flex; flex-direction: column; gap: 2rem; }
+            .Project { text-decoration: none; color: $home-secondary; margin: 0; }
+            .Project:hover { background-color: $home-dark; color: $home-light; }
+                .Project img { max-width: 480px; width: 100%; 
+                    @media (min-width: 480px) { width: 480px; }
+                }
+                .ProjectDetails { padding: 0 1rem; }
+                    .ProjectTitle {  }
+                    .ProjectParagraph {  }
 
 /*07-07-2023-09-10-business-card*/
 $bus-primary: #6c584c;
