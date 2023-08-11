@@ -69,11 +69,15 @@ $home-cta: #56A879;
                     .MenuListItem { list-style: none; margin-left: 0; padding: 1rem; font-size: 1.5rem; }
                     .MenuListItem:hover, .MenuListItem:focus { background-color: $home-dark; }
                         .HomeMenuLink {  }
-        .Main { display: flex; flex-direction: column; gap: 2rem; }
+        .Main { display: grid; grid-gap: 1rem;
+            @media (min-width: 500px) { justify-content: center; }
+            @media (min-width: 768px) { padding: 2rem; grid-gap: 1.25rem; grid-template-columns: repeat(auto-fit, minmax(344px, auto)); }
+            @media (min-width: 1488px) { padding: 2rem 8rem; grid-gap: 3.75rem; grid-template-columns: repeat(auto-fit, minmax(400px, auto)); }
+        }
             .Project { text-decoration: none; color: $home-secondary; margin: 0; }
             .Project:hover { background-color: $home-dark; color: $home-light; }
                 .Project img { max-width: 480px; width: 100%; 
-                    @media (min-width: 480px) { width: 480px; }
+                    // @media (min-width: 480px) { width: 480px; }
                 }
                 .ProjectDetails { padding: 0 1rem; }
                     .ProjectTitle {  }

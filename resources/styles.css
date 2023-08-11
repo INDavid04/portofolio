@@ -169,9 +169,27 @@ body {
 }
 
 .Main {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
+  display: grid;
+  grid-gap: 1rem;
+}
+@media (min-width: 500px) {
+  .Main {
+    justify-content: center;
+  }
+}
+@media (min-width: 768px) {
+  .Main {
+    padding: 2rem;
+    grid-gap: 1.25rem;
+    grid-template-columns: repeat(auto-fit, minmax(344px, auto));
+  }
+}
+@media (min-width: 1488px) {
+  .Main {
+    padding: 2rem 8rem;
+    grid-gap: 3.75rem;
+    grid-template-columns: repeat(auto-fit, minmax(400px, auto));
+  }
 }
 
 .Project {
@@ -188,11 +206,6 @@ body {
 .Project img {
   max-width: 480px;
   width: 100%;
-}
-@media (min-width: 480px) {
-  .Project img {
-    width: 480px;
-  }
 }
 
 .ProjectDetails {
