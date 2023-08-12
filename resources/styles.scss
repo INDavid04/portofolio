@@ -44,7 +44,8 @@ $home-secondary: #788F74;
 $home-dark: #423A39;
 $home-light: #8F8F8F;
 $home-cta: #56A879;
-.HomeMenuLink { text-decoration: none; color: $home-cta; }
+.FooterTitle { font-family: "Quicksand"; }
+.HomeMenuLink, .FooterLink { text-decoration: none; color: $home-cta; }
 .HomeContainer { background-color: #333; color: #f1f1f1; font-family: "Domine", sans-serif; font-weight: 400; }
     .NavbarContainer { display: flex; justify-content: space-between; align-items: center; padding: 0.75rem; background-color: $home-primary; font-family: "Quicksand", sans-serif; }
         .LogoContainer {  }
@@ -82,6 +83,18 @@ $home-cta: #56A879;
                 .ProjectDetails { padding: 0 1rem; }
                     .ProjectTitle {  }
                     .ProjectParagraph {  }
+        .Footer { padding: 1rem; border-top: 4px solid $home-primary; }
+            .MainProjects { padding-bottom: 2rem; border-bottom: 2px solid $home-primary; }
+                .FooterTitle {  }
+                .MainProjectsLinks { display: flex; flex-direction: column; gap: 1rem; padding-left: 1rem; }
+                    .FooterLink {  }
+            .LeaveMessage { padding-bottom: 2rem; border-bottom: 2px solid $home-primary; }
+                .InputBox { width: 100%; line-height: 1.875rem; margin: 0.2rem 0; border: 2px solid $home-light; padding-left: 0.5rem;background-color: $home-dark; color: $home-light; }
+                .SendButton { border: none; padding: 0.4rem 1rem; background-color: $home-cta; color: $home-dark; cursor: pointer; }
+            .SocialMedia {  }
+                .FooterIcons { display: flex; justify-content: space-between; }
+                .FooterIcon {  }
+            .Copyrights {  }
 
 /*07-07-2023-09-10-business-card*/
 $bus-primary: #6c584c;

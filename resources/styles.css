@@ -55,7 +55,11 @@ body {
 }
 
 /*29-07-2023-15-10-home-page*/
-.HomeMenuLink {
+.FooterTitle {
+  font-family: "Quicksand";
+}
+
+.HomeMenuLink, .FooterLink {
   text-decoration: none;
   color: #56A879;
 }
@@ -210,6 +214,51 @@ body {
 
 .ProjectDetails {
   padding: 0 1rem;
+}
+
+.Footer {
+  padding: 1rem;
+  border-top: 4px solid #3E433D;
+}
+
+.MainProjects {
+  padding-bottom: 2rem;
+  border-bottom: 2px solid #3E433D;
+}
+
+.MainProjectsLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-left: 1rem;
+}
+
+.LeaveMessage {
+  padding-bottom: 2rem;
+  border-bottom: 2px solid #3E433D;
+}
+
+.InputBox {
+  width: 100%;
+  line-height: 1.875rem;
+  margin: 0.2rem 0;
+  border: 2px solid #8F8F8F;
+  padding-left: 0.5rem;
+  background-color: #423A39;
+  color: #8F8F8F;
+}
+
+.SendButton {
+  border: none;
+  padding: 0.4rem 1rem;
+  background-color: #56A879;
+  color: #423A39;
+  cursor: pointer;
+}
+
+.FooterIcons {
+  display: flex;
+  justify-content: space-between;
 }
 
 /*07-07-2023-09-10-business-card*/
