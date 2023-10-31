@@ -15,28 +15,19 @@ Center vertically and horizontally
 - https://angel.co/
 */
 
-@font-face {
-    font-family: "Domine";
-    src: url(./font/Domine-Regular.woff2);
-    font-weight: 400;
-    font-style: normal;
-}
+@font-face { font-family: "Domine"; src: url(./font/Domine-Regular.woff2); font-weight: 400; font-style: normal; }
 
-@font-face {
-    font-family: "Quicksand";
-    src: url(./font/Quicksand-Regular.woff2);
-    font-weight: 400;
-    font-style: normal;
-}
+@font-face { font-family: "Quicksand"; src: url(./font/Quicksand-Regular.woff2); font-weight: 400; font-style: normal; }
 
-body { margin: 0; padding: 0; font-size: 16px; }
+body { margin: 0; padding: 0; background-color: #0c0523; color: #d1d1d1; font-size: 16px; }
 .DottedBorder { border: 3px dotted blue; }
 .DesktopOnly { display: none;
-@media (min-width: 960px) { display: block; }
+    @media (min-width: 960px) { display: block; }
 }
 .MobileOnly { display: block;
-@media (min-width: 960px) { display: none; }
+    @media (min-width: 960px) { display: none; }
 }
+.ContentSpacer { background: linear-gradient(to right, #d1d1d111, #8b000050); color: darkcyan; text-align: center; }
 
 /*29-07-2023-15-10-home-page*/
 $home-primary: #3E433D;
@@ -103,12 +94,12 @@ $bus-text: #f0ead2;
 $bus-background: #adc178;
 .BusinessCard { width: 100vw; height: 100vh; background: $bus-background; }
     .Card { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); border-bottom: 0.5rem solid $bus-secondary; border-radius: 1rem; padding: 1rem; background: $bus-primary; color: $bus-text;
-    @media (min-width: 450px) { display: flex; width: 24rem }
-    @media (min-width: 750px) { width: 31.25rem; }
+        @media (min-width: 450px) { display: flex; width: 24rem }
+        @media (min-width: 750px) { width: 31.25rem; }
     }
         .ContainerCardImage { margin: 1.5rem 0;
-        @media (min-width: 450px) { margin: 1.940625rem 0 1.940625rem 1.2rem; }
-        @media (min-width: 750px) { margin: 1.940625rem 0 1.940625rem 1.940625rem; }    
+            @media (min-width: 450px) { margin: 1.940625rem 0 1.940625rem 1.2rem; }
+            @media (min-width: 750px) { margin: 1.940625rem 0 1.940625rem 1.940625rem; }    
         }
             .CardImage { display: block; margin: 0 auto; border-radius: 1rem; }
         .CardDetails { display: block;  margin: 0 auto; max-width: 222px; text-align: center; }
@@ -131,9 +122,40 @@ $cat-background: #0B0100;
                     .CatHeroNavText { color: $cat-text; }
                         #cat-primary { color: $cat-primary; }
                         #cat-secondary { color: $cat-secondary; }
-    .CatHeroSection { height: 16rem; background: url("../pages/cat-hero/cat.gif"); background-size: 100%; }
+    .CatHeroSection { height: 16rem; background: url("../../cat-hero/cat.gif"); background-size: 100%; }
         #cat-hero-title {  }
         .CatHeroSubtitle {  }
         .CatHeroCTAButton {  }
     .CatHeroFooter {  }
         #cat-hero-terms {  }
+/*08-07-2023-10-21-cat-hero*/
+
+/*30-10-2023-09-57-bootcamp-aniakubow*/
+.BootcampAnia { margin: 0.5rem; }
+.BootcampAnia header { margin-bottom: 1rem; width: 300px; height: 200px; background-color: green; }
+.BootcampAnia .AboutMe { display: flex; align-items: center; margin: 1rem; border: 7px solid black; border-radius: 10px; width: 300px; height: 100px; 
+background-color: rgb(177,69,21,0.8); }
+    .avatar { margin: 0 1rem; border-radius: 33px; }
+    #name { color: darkred; }
+.BootcampAnia section { display: flex; flex-direction: column; flex-wrap: wrap; justify-content: center; width: 300px; height: 100px; background-color: red; }
+    .BootcampAnia section div { margin: 0.5rem; width: 30px; height: 30px; background-color: blue; }
+.BootcampAnia footer {  }
+/*@TODO-bootcamp-aniakubow*/
+
+/*31-10-2023-09-07-mozzila-course*/
+.RawData,
+.SemanticHTML,
+.NestedList { margin: 0 1rem 2rem; }
+.HeadingParagraph,
+.ListUno,
+.StrongEm { margin: 0 1rem 2rem; font-family: Arial, Helvetica, sans-serif; }
+.HeadingParagraph h2,
+.HeadingParagraph h3,
+.StrongEm h2 { color: purple; }
+.HeadingParagraph p { color: gray; }
+.ListUno ul,
+.ListUno ol { border: 2px solid orange; border-radius: 5px; padding: 0.5rem 2rem; line-height: 1.8; }
+.ListUno ol { border-color: purple; }
+.StrongEm strong { color: purple; }
+.StrongEm em { color: gray; }
+/*31-10-2023-09-54-mozzila-course*/

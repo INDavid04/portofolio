@@ -29,6 +29,8 @@ Center vertically and horizontally
 body {
   margin: 0;
   padding: 0;
+  background-color: #0c0523;
+  color: #d1d1d1;
   font-size: 16px;
 }
 
@@ -52,6 +54,12 @@ body {
   .MobileOnly {
     display: none;
   }
+}
+
+.ContentSpacer {
+  background: linear-gradient(to right, rgba(209, 209, 209, 0.0666666667), rgba(139, 0, 0, 0.3137254902));
+  color: darkcyan;
+  text-align: center;
 }
 
 /*29-07-2023-15-10-home-page*/
@@ -365,6 +373,103 @@ body {
 
 .CatHeroSection {
   height: 16rem;
-  background: url("../pages/cat-hero/cat.gif");
+  background: url("../../cat-hero/cat.gif");
   background-size: 100%;
-}/*# sourceMappingURL=styles.css.map */
+}
+
+/*08-07-2023-10-21-cat-hero*/
+/*30-10-2023-09-57-bootcamp-aniakubow*/
+.BootcampAnia {
+  margin: 0.5rem;
+}
+
+.BootcampAnia header {
+  margin-bottom: 1rem;
+  width: 300px;
+  height: 200px;
+  background-color: green;
+}
+
+.BootcampAnia .AboutMe {
+  display: flex;
+  align-items: center;
+  margin: 1rem;
+  border: 7px solid black;
+  border-radius: 10px;
+  width: 300px;
+  height: 100px;
+  background-color: rgba(177, 69, 21, 0.8);
+}
+
+.avatar {
+  margin: 0 1rem;
+  border-radius: 33px;
+}
+
+#name {
+  color: darkred;
+}
+
+.BootcampAnia section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 300px;
+  height: 100px;
+  background-color: red;
+}
+
+.BootcampAnia section div {
+  margin: 0.5rem;
+  width: 30px;
+  height: 30px;
+  background-color: blue;
+}
+
+/*@TODO-bootcamp-aniakubow*/
+/*31-10-2023-09-07-mozzila-course*/
+.RawData,
+.SemanticHTML,
+.NestedList {
+  margin: 0 1rem 2rem;
+}
+
+.HeadingParagraph,
+.ListUno,
+.StrongEm {
+  margin: 0 1rem 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.HeadingParagraph h2,
+.HeadingParagraph h3,
+.StrongEm h2 {
+  color: purple;
+}
+
+.HeadingParagraph p {
+  color: gray;
+}
+
+.ListUno ul,
+.ListUno ol {
+  border: 2px solid orange;
+  border-radius: 5px;
+  padding: 0.5rem 2rem;
+  line-height: 1.8;
+}
+
+.ListUno ol {
+  border-color: purple;
+}
+
+.StrongEm strong {
+  color: purple;
+}
+
+.StrongEm em {
+  color: gray;
+}
+
+/*31-10-2023-09-54-mozzila-course*//*# sourceMappingURL=styles.css.map */
