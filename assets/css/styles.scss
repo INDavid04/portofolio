@@ -1,5 +1,5 @@
 /*
-Web safe fonts: sans-serif: Arial, Verdana, Tahoma, Trebuchet MS; serif: Times New Roman, Georgia, Garamond; mono/cursive: Courier New, Brush Script MT
+Web safe fonts: sans-serif: Arial, Verdana, Tahoma, Trebuchet MS; serif: Times New Roman, Georgia, Garamondd; mono/cursive: Courier New, Brush Script MT
 Center vertically
     .container { height: 200px; position: relative; border: 3px solid green; }
     .vertical-center { margin: 0; position: absolute; top: 50%; -ms-transform: translateY(-50%); transform: translateY(-50%); }
@@ -14,12 +14,18 @@ Center vertically and horizontally
 - https://arc.dev/remote-jr-jobs
 - https://angel.co/
 */
-
+/// Font
 @font-face { font-family: "Domine"; src: url(./font/Domine-Regular.woff2); font-weight: 400; font-style: normal; }
-
 @font-face { font-family: "Quicksand"; src: url(./font/Quicksand-Regular.woff2); font-weight: 400; font-style: normal; }
 
+/// Colors
+$home-primary: #3E433D; $home-secondary: #788F74; $home-dark: #423A39; $home-light: #8F8F8F; $home-cta: #56A879;
+$bus-primary: #6c584c; $bus-secondary: #a98467; $bus-text: #f0ead2; $bus-background: #adc178; 
+$cat-primary: #24647A; $cat-secondary: #474CC7; $cat-cta: #A16526; $cat-text: #A1ACA2; $cat-background: #0B0100;
+
 body { margin: 0; padding: 0; background-color: #0c0523; color: #d1d1d1; font-size: 16px; }
+a { color: $home-cta; line-height: 1.8; border-bottom: 1px solid $home-cta; text-decoration: none; transition: all .1s; }
+a:hover { color: $home-light; border-bottom: 2px dashed $home-light; }
 .DottedBorder { border: 3px dotted blue; }
 .DesktopOnly { display: none;
     @media (min-width: 960px) { display: block; }
@@ -27,14 +33,18 @@ body { margin: 0; padding: 0; background-color: #0c0523; color: #d1d1d1; font-si
 .MobileOnly { display: block;
     @media (min-width: 960px) { display: none; }
 }
-.ContentSpacer { background: linear-gradient(to right, #d1d1d111, #8b000050); color: darkcyan; text-align: center; }
+.ContentSpacer { background: linear-gradient(to right, #d1d1d111, #8b000050); color: darkcyan; text-align: center; font-family: "Verdana", sans-serif;
+    @media (min-width: 500px) { display: flex; flex-direction: row; justify-content: space-between; align-items: center; }
+}
+    .SpacerDate { order: -1; 
+        @media (min-width: 500px) and (max-width: 1000px) { width: 10rem; }
+    }
+    .SpacerTitle { min-width: 16rem; }
+    .SpacerTime { 
+        @media (min-width: 500px) and (max-width: 100px) { width: 9rem; }
+    }
 
 /*29-07-2023-15-10-home-page*/
-$home-primary: #3E433D;
-$home-secondary: #788F74;
-$home-dark: #423A39;
-$home-light: #8F8F8F;
-$home-cta: #56A879;
 .FooterTitle { font-family: "Quicksand"; }
 .HomeMenuLink, .FooterLink { text-decoration: none; color: $home-cta; }
 .HomeContainer { background-color: #333; color: #f1f1f1; font-family: "Domine", sans-serif; font-weight: 400; }
@@ -60,7 +70,7 @@ $home-cta: #56A879;
                 }
                     .MenuListItem { list-style: none; margin-left: 0; padding: 1rem; font-size: 1.5rem; }
                     .MenuListItem:hover, .MenuListItem:focus { background-color: $home-dark; }
-                        .HomeMenuLink {  }
+                .HomeMenuLink {  } 
         .Main { display: grid; grid-gap: 1rem;
             @media (min-width: 500px) { justify-content: center; }
             @media (min-width: 768px) { padding: 2rem; grid-gap: 1.25rem; grid-template-columns: repeat(auto-fit, minmax(344px, auto)); }
@@ -88,10 +98,6 @@ $home-cta: #56A879;
             .Copyrights {  }
 
 /*07-07-2023-09-10-business-card*/
-$bus-primary: #6c584c;
-$bus-secondary: #a98467;
-$bus-text: #f0ead2;
-$bus-background: #adc178;
 .BusinessCard { width: 100vw; height: 100vh; background: $bus-background; }
     .Card { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); border-bottom: 0.5rem solid $bus-secondary; border-radius: 1rem; padding: 1rem; background: $bus-primary; color: $bus-text;
         @media (min-width: 450px) { display: flex; width: 24rem }
@@ -106,11 +112,6 @@ $bus-background: #adc178;
 /*07-07-2023-12-55-business-card*/
 
 /*08-07-2023-10-21-cat-hero*/
-$cat-primary: #24647A;
-$cat-secondary: #474CC7;
-$cat-cta: #A16526;
-$cat-text: #A1ACA2;
-$cat-background: #0B0100;
 .CatHeroContainer { padding: 0.5rem; height: 100vh; color: $cat-text; background: $cat-background; }
     .CatHeroNav {  }
         .CatHeroNavList { display: flex; justify-content: center; list-style: none; margin: 0; padding: 0; }
@@ -131,24 +132,19 @@ $cat-background: #0B0100;
 /*08-07-2023-10-21-cat-hero*/
 
 /*30-10-2023-09-57-bootcamp-aniakubow*/
-.BootcampAnia { margin: 0.5rem; }
-.BootcampAnia header { margin-bottom: 1rem; width: 300px; height: 200px; background-color: green; }
-.BootcampAnia .AboutMe { display: flex; align-items: center; margin: 1rem; border: 7px solid black; border-radius: 10px; width: 300px; height: 100px; 
-background-color: rgb(177,69,21,0.8); }
+.BootcampAnia { display: flex; flex-direction: column; margin: 0; }
+.BootcampAnia header { margin-bottom: 1rem; width: 100%; height: 200px; background-color: green; }
+.BootcampAnia .AboutMe { display: flex; align-items: center; margin: 1rem 0; border: 7px solid black; border-radius: 10px; width: 100%; height: 200px; background-color: rgb(177,69,21,0.8); box-sizing: border-box; }
     .avatar { margin: 0 1rem; border-radius: 33px; }
-    #name { color: darkred; }
-.BootcampAnia section { display: flex; flex-direction: column; flex-wrap: wrap; justify-content: center; width: 300px; height: 100px; background-color: red; }
+    #name { color: lightgreen; }
+.BootcampAnia section { display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center; align-items: center; width: 100%; height: 100px;background-image: repeating-linear-gradient(45deg, cyan 10%, lightyellow 55%, darkred); }
     .BootcampAnia section div { margin: 0.5rem; width: 30px; height: 30px; background-color: blue; }
-.BootcampAnia footer {  }
+    .BoxShadow { box-shadow: 5px -5px 8px darkblue; }
+.BootcampAnia footer { width: 100%; }
 /*@TODO-bootcamp-aniakubow*/
 
 /*31-10-2023-09-07-mozzila-course*/
-.RawData,
-.SemanticHTML,
-.NestedList { margin: 0 1rem 2rem; }
-.HeadingParagraph,
-.ListUno,
-.StrongEm { margin: 0 1rem 2rem; font-family: Arial, Helvetica, sans-serif; }
+.MozzilaCourse section { margin: 0 2rem 4rem; font-family: Arial, Helvetica, sans-serif; }
 .HeadingParagraph h2,
 .HeadingParagraph h3,
 .StrongEm h2 { color: purple; }
@@ -159,3 +155,10 @@ background-color: rgb(177,69,21,0.8); }
 .StrongEm strong { color: purple; }
 .StrongEm em { color: gray; }
 /*31-10-2023-09-54-mozzila-course*/
+
+/*06-11-2023-10-34-technology-hub*/
+.UserDetails label { display: block; margin: 1rem; width: min-content; }
+.RadioCheck label { display: flex; gap: .5rem; width: min-content; white-space: nowrap; }
+.RadioCheck label input { margin: 0; }
+.TechnologyForm .FormsButton { margin-top: 1rem; padding: 0.2rem 2rem; border-radius: 4px; }
+/*@TODO-technology-hub*/

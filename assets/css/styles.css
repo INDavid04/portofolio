@@ -1,5 +1,5 @@
 /*
-Web safe fonts: sans-serif: Arial, Verdana, Tahoma, Trebuchet MS; serif: Times New Roman, Georgia, Garamond; mono/cursive: Courier New, Brush Script MT
+Web safe fonts: sans-serif: Arial, Verdana, Tahoma, Trebuchet MS; serif: Times New Roman, Georgia, Garamondd; mono/cursive: Courier New, Brush Script MT
 Center vertically
     .container { height: 200px; position: relative; border: 3px solid green; }
     .vertical-center { margin: 0; position: absolute; top: 50%; -ms-transform: translateY(-50%); transform: translateY(-50%); }
@@ -34,6 +34,19 @@ body {
   font-size: 16px;
 }
 
+a {
+  color: #56A879;
+  line-height: 1.8;
+  border-bottom: 1px solid #56A879;
+  text-decoration: none;
+  transition: all 0.1s;
+}
+
+a:hover {
+  color: #8F8F8F;
+  border-bottom: 2px dashed #8F8F8F;
+}
+
 .DottedBorder {
   border: 3px dotted blue;
 }
@@ -60,6 +73,34 @@ body {
   background: linear-gradient(to right, rgba(209, 209, 209, 0.0666666667), rgba(139, 0, 0, 0.3137254902));
   color: darkcyan;
   text-align: center;
+  font-family: "Verdana", sans-serif;
+}
+@media (min-width: 500px) {
+  .ContentSpacer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.SpacerDate {
+  order: -1;
+}
+@media (min-width: 500px) and (max-width: 1000px) {
+  .SpacerDate {
+    width: 10rem;
+  }
+}
+
+.SpacerTitle {
+  min-width: 16rem;
+}
+
+@media (min-width: 500px) and (max-width: 100px) {
+  .SpacerTime {
+    width: 9rem;
+  }
 }
 
 /*29-07-2023-15-10-home-page*/
@@ -380,12 +421,14 @@ body {
 /*08-07-2023-10-21-cat-hero*/
 /*30-10-2023-09-57-bootcamp-aniakubow*/
 .BootcampAnia {
-  margin: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
 }
 
 .BootcampAnia header {
   margin-bottom: 1rem;
-  width: 300px;
+  width: 100%;
   height: 200px;
   background-color: green;
 }
@@ -393,12 +436,13 @@ body {
 .BootcampAnia .AboutMe {
   display: flex;
   align-items: center;
-  margin: 1rem;
+  margin: 1rem 0;
   border: 7px solid black;
   border-radius: 10px;
-  width: 300px;
-  height: 100px;
+  width: 100%;
+  height: 200px;
   background-color: rgba(177, 69, 21, 0.8);
+  box-sizing: border-box;
 }
 
 .avatar {
@@ -407,17 +451,18 @@ body {
 }
 
 #name {
-  color: darkred;
+  color: lightgreen;
 }
 
 .BootcampAnia section {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  width: 300px;
+  align-items: center;
+  width: 100%;
   height: 100px;
-  background-color: red;
+  background-image: repeating-linear-gradient(45deg, cyan 10%, lightyellow 55%, darkred);
 }
 
 .BootcampAnia section div {
@@ -427,18 +472,18 @@ body {
   background-color: blue;
 }
 
-/*@TODO-bootcamp-aniakubow*/
-/*31-10-2023-09-07-mozzila-course*/
-.RawData,
-.SemanticHTML,
-.NestedList {
-  margin: 0 1rem 2rem;
+.BoxShadow {
+  box-shadow: 5px -5px 8px darkblue;
 }
 
-.HeadingParagraph,
-.ListUno,
-.StrongEm {
-  margin: 0 1rem 2rem;
+.BootcampAnia footer {
+  width: 100%;
+}
+
+/*@TODO-bootcamp-aniakubow*/
+/*31-10-2023-09-07-mozzila-course*/
+.MozzilaCourse section {
+  margin: 0 2rem 4rem;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -472,4 +517,31 @@ body {
   color: gray;
 }
 
-/*31-10-2023-09-54-mozzila-course*//*# sourceMappingURL=styles.css.map */
+/*31-10-2023-09-54-mozzila-course*/
+/*06-11-2023-10-34-technology-hub*/
+.UserDetails label {
+  display: block;
+  margin: 1rem;
+  width: -moz-min-content;
+  width: min-content;
+}
+
+.RadioCheck label {
+  display: flex;
+  gap: 0.5rem;
+  width: -moz-min-content;
+  width: min-content;
+  white-space: nowrap;
+}
+
+.RadioCheck label input {
+  margin: 0;
+}
+
+.TechnologyForm .FormsButton {
+  margin-top: 1rem;
+  padding: 0.2rem 2rem;
+  border-radius: 4px;
+}
+
+/*@TODO-technology-hub*//*# sourceMappingURL=styles.css.map */
