@@ -1,19 +1,9 @@
-/*
-Web safe fonts: sans-serif: Arial, Verdana, Tahoma, Trebuchet MS; serif: Times New Roman, Georgia, Garamondd; mono/cursive: Courier New, Brush Script MT
-Center vertically
-    .container { height: 200px; position: relative; border: 3px solid green; }
-    .vertical-center { margin: 0; position: absolute; top: 50%; -ms-transform: translateY(-50%); transform: translateY(-50%); }
-Center vertically and horizontally
-    .center { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
-- https://linkedin.com
-- https://glassdoor.com
-- https://hackajob.com
-- https://hired.com/
-- https://remoteok.com/
-- https://nocsdegree.com/jobs
-- https://arc.dev/remote-jr-jobs
-- https://angel.co/
-*/
+/* Web safe fonts: sans-serif: Arial, Verdana, Tahoma, Trebuchet MS; serif: Times New Roman, Georgia, Garamondd; mono/cursive: Courier New, Brush Script MT | Center vertically | .container { height: 200px; position: relative; border: 3px solid green; } | .vertical-center { margin: 0; position: absolute; top: 50%; -ms-transform: translateY(-50%); transform: translateY(-50%); } | Center vertically and horizontally | .center { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); } */
+/**********************************************************/
+/*                                                        */
+/*  Fonts                                                 */
+/*                                                        */
+/**********************************************************/
 @font-face {
   font-family: "Domine";
   src: url(./font/Domine-Regular.woff2);
@@ -26,6 +16,18 @@ Center vertically and horizontally
   font-weight: 400;
   font-style: normal;
 }
+/**********************************************************/
+/*                                                        */
+/*  Colors                                                */
+/*                                                        */
+/**********************************************************/
+/**********************************************************/
+/*                                                        */
+/*  Presets                                               */
+/*  datestamp: 8 November 2023                            */
+/*  timestamp: 20:25 - TODO:                              */
+/*                                                        */
+/**********************************************************/
 body {
   margin: 0;
   padding: 0;
@@ -42,13 +44,14 @@ a {
   transition: all 0.1s;
 }
 
+a, .HomeMenuLink, .FooterLink {
+  text-decoration: none;
+  color: #56A879;
+}
+
 a:hover {
   color: #8F8F8F;
   border-bottom: 2px dashed #8F8F8F;
-}
-
-.DottedBorder {
-  border: 3px dotted blue;
 }
 
 .DesktopOnly {
@@ -103,24 +106,18 @@ a:hover {
   }
 }
 
-/*29-07-2023-15-10-home-page*/
-.FooterTitle {
-  font-family: "Quicksand";
+.DottedBorder {
+  border: 3px dotted blue;
 }
 
-.HomeMenuLink, .FooterLink {
-  text-decoration: none;
-  color: #56A879;
-}
-
-.HomeContainer {
-  background-color: #333;
-  color: #f1f1f1;
-  font-family: "Domine", sans-serif;
-  font-weight: 400;
-}
-
-.NavbarContainer {
+/**********************************************************/
+/*                                                        */
+/*  Header and Footer                                     */
+/*  datestamp: 8 November 2023                            */
+/*  timestamp: 17:45 - TODO:                              */
+/*                                                        */
+/**********************************************************/
+header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -221,53 +218,10 @@ a:hover {
   background-color: #423A39;
 }
 
-.Main {
-  display: grid;
-  grid-gap: 1rem;
-}
-@media (min-width: 500px) {
-  .Main {
-    justify-content: center;
-  }
-}
-@media (min-width: 768px) {
-  .Main {
-    padding: 2rem;
-    grid-gap: 1.25rem;
-    grid-template-columns: repeat(auto-fit, minmax(344px, auto));
-  }
-}
-@media (min-width: 1488px) {
-  .Main {
-    padding: 2rem 8rem;
-    grid-gap: 3.75rem;
-    grid-template-columns: repeat(auto-fit, minmax(400px, auto));
-  }
-}
-
-.Project {
-  text-decoration: none;
-  color: #788F74;
-  margin: 0;
-}
-
-.Project:hover {
-  background-color: #423A39;
-  color: #8F8F8F;
-}
-
-.Project img {
-  max-width: 480px;
-  width: 100%;
-}
-
-.ProjectDetails {
-  padding: 0 1rem;
-}
-
-.Footer {
+footer {
   padding: 1rem;
   border-top: 4px solid #3E433D;
+  background-color: #423A39;
 }
 
 .MainProjects {
@@ -305,12 +259,74 @@ a:hover {
   cursor: pointer;
 }
 
+.FooterTitle {
+  font-family: "Quicksand";
+}
+
 .FooterIcons {
   display: flex;
   justify-content: space-between;
 }
 
-/*07-07-2023-09-10-business-card*/
+/**********************************************************/
+/*                                                        */
+/*  Home page                                             */
+/*  datestamp: 29 July 2023                               */
+/*  timestamp: 15:10 - TODO:                              */
+/*                                                        */
+/**********************************************************/
+.HomePage {
+  display: grid;
+  grid-gap: 1rem;
+  background-color: #423A39;
+}
+@media (min-width: 500px) {
+  .HomePage {
+    justify-content: center;
+  }
+}
+@media (min-width: 768px) {
+  .HomePage {
+    padding: 2rem;
+    grid-gap: 1.25rem;
+    grid-template-columns: repeat(auto-fit, minmax(344px, auto));
+  }
+}
+@media (min-width: 1488px) {
+  .HomePage {
+    padding: 2rem 8rem;
+    grid-gap: 3.75rem;
+    grid-template-columns: repeat(auto-fit, minmax(400px, auto));
+  }
+}
+
+.Project {
+  text-decoration: none;
+  color: #788F74;
+  margin: 0;
+}
+
+.Project:hover {
+  background-color: #423A39;
+  color: #8F8F8F;
+}
+
+.Project img {
+  max-width: 480px;
+  width: 100%;
+}
+
+.ProjectDetails {
+  padding: 0 1rem;
+}
+
+/**********************************************************/
+/*                                                        */
+/*  Business card                                         */
+/*  datestamp: 7 July 2023                                */
+/*  timestamp: 09:10 - 12:55                              */
+/*                                                        */
+/**********************************************************/
 .BusinessCard {
   width: 100vw;
   height: 100vh;
@@ -367,8 +383,13 @@ a:hover {
   text-align: center;
 }
 
-/*07-07-2023-12-55-business-card*/
-/*08-07-2023-10-21-cat-hero*/
+/**********************************************************/
+/*                                                        */
+/*  Cat hero                                              */
+/*  datestamp: 8 July 2023                                */
+/*  timestamp: 10:21 - TODO                               */
+/*                                                        */
+/**********************************************************/
 .CatHeroContainer {
   padding: 0.5rem;
   height: 100vh;
@@ -418,8 +439,13 @@ a:hover {
   background-size: 100%;
 }
 
-/*08-07-2023-10-21-cat-hero*/
-/*30-10-2023-09-57-bootcamp-aniakubow*/
+/**********************************************************/
+/*                                                        */
+/*  Bootcamp Ania Kubow                                   */
+/*  datestamp: 30 October 2023                            */
+/*  timestamp: 09:57 - TODO                               */
+/*                                                        */
+/**********************************************************/
 .BootcampAnia {
   display: flex;
   flex-direction: column;
@@ -480,8 +506,13 @@ a:hover {
   width: 100%;
 }
 
-/*@TODO-bootcamp-aniakubow*/
-/*31-10-2023-09-07-mozzila-course*/
+/**********************************************************/
+/*                                                        */
+/*  Mozzila course                                        */
+/*  datestamp: 31 October 2023                            */
+/*  timestamp: 09:07 - 09:54                              */
+/*                                                        */
+/**********************************************************/
 .MozzilaCourse section {
   margin: 0 2rem 4rem;
   font-family: Arial, Helvetica, sans-serif;
@@ -517,8 +548,13 @@ a:hover {
   color: gray;
 }
 
-/*31-10-2023-09-54-mozzila-course*/
-/*06-11-2023-10-34-technology-hub*/
+/**********************************************************/
+/*                                                        */
+/*  Technology hub                                        */
+/*  datestamp: 6 November 2023                            */
+/*  timestamp: 10:34 - TODO                               */
+/*                                                        */
+/**********************************************************/
 .UserDetails label {
   display: block;
   margin: 1rem;
@@ -542,6 +578,4 @@ a:hover {
   margin-top: 1rem;
   padding: 0.2rem 2rem;
   border-radius: 4px;
-}
-
-/*@TODO-technology-hub*//*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */

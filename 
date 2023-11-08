@@ -1,0 +1,99 @@
+[33mcommit 023efca29a389fcbac5fec7261a92e27e7dcb221[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Merge: 838f1d2 e978a89
+Author: INDavid04 <davidirimia04@gmail.com>
+Date:   Tue Nov 7 20:00:52 2023 +0200
+
+    Merge branch 'main' of github.com:INDavid04/SmallProjects
+
+[33mcommit 838f1d24bba00ab2e0b0cdaaf8c7649568de2c09[m
+Author: INDavid04 <davidirimia04@gmail.com>
+Date:   Tue Nov 7 19:59:35 2023 +0200
+
+    feat: add technology hub and link section to mozzila course
+
+[33mcommit e978a8941b50799fef4968f2acdeaca21b431fb7[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: INDavid04 <119622789+INDavid04@users.noreply.github.com>
+Date:   Tue Oct 31 11:28:15 2023 +0200
+
+    Update README.md
+
+[33mcommit 831f85868845f951c71694060570ccc9296a5154[m
+Author: INDavid04 <davidirimia04@gmail.com>
+Date:   Tue Oct 31 11:26:38 2023 +0200
+
+    feat: add bootcamp and mozzila
+
+[33mcommit 4c5859d8317c0bc1a26a8c4612a925aa2b66ca19[m
+Author: INDavid04 <davidirimia04@gmail.com>
+Date:   Wed Oct 18 19:32:11 2023 +0300
+
+    feat: add projects and HTMLs from theodinproject
+
+[33mcommit 09f2ac9c196f53d2074d88efe97dfce43d4055dd[m
+Author: INDavid04 <davidirimia04@gmail.com>
+Date:   Wed Oct 18 13:32:07 2023 +0300
+
+    feat: organizing small projects
+
+[33mcommit ee26c93f62222fd7b9815c340c3d1415dee3a26f[m
+Author: INDavid04 <david.irimia@digitalexplorer.ro>
+Date:   Sat Aug 12 20:39:04 2023 +0300
+
+    feat: mobile footer v1
+
+[33mcommit 50b3241706e76d2e27992650ab0866cbb67b45c9[m
+Author: INDavid04 <david.irimia@digitalexplorer.ro>
+Date:   Fri Aug 11 16:30:06 2023 +0300
+
+    feat: responsive grid layout v1
+
+[33mcommit 70c3e173ecfa65cafaf48f92a8491c93e9e94da0[m
+Author: INDavid04 <david.irimia@digitalexplorer.ro>
+Date:   Mon Aug 7 18:12:42 2023 +0300
+
+    feat: mobile main project section v1
+
+[33mcommit a4dc90b2720cd50fbfb1bf4b97db67fa389bd75c[m
+Author: INDavid04 <david.irimia@digitalexplorer.ro>
+Date:   Fri Aug 4 16:02:10 2023 +0300
+
+    feat: responsive navbar v1
+
+[33mcommit fe9a386781696391cf35ed70a14138b20b5810e2[m
+Merge: b37d7cf 244cd24
+Author: INDavid04 <david.irimia@digitalexplorer.ro>
+Date:   Fri Jul 7 12:58:24 2023 +0300
+
+    Merge branch 'main' of https://github.com/INDavid04/ScrimbaTutorials
+
+[33mcommit b37d7cfd03e6774e3fa132a3e1f6f695eb2921e7[m
+Author: INDavid04 <david.irimia@digitalexplorer.ro>
+Date:   Fri Jul 7 12:57:08 2023 +0300
+
+    07iul2023
+
+[33mcommit 244cd24a6e61524098eb30844749e47e65f0cb86[m
+Author: David04 <119622789+INDavid04@users.noreply.github.com>
+Date:   Thu Jul 6 22:09:32 2023 +0300
+
+    Update README.md
+    
+    Site is deployed on netlify.com
+
+[33mcommit 1c08a059d0a05ae872bbae9dd0e4dce9db32d236[m
+Author: INDavid04 <david.irimia@digitalexplorer.ro>
+Date:   Thu Jul 6 22:01:47 2023 +0300
+
+    home page for netlify
+
+[33mcommit e576b69826e17504699248e2fb0690441c23ce2d[m
+Author: David04 <119622789+INDavid04@users.noreply.github.com>
+Date:   Wed Jul 5 15:22:06 2023 +0300
+
+    Added personal site
+
+[33mcommit be1e7c271060d6542c1506fe4ef696bdf9eab498[m
+Author: David04 <119622789+INDavid04@users.noreply.github.com>
+Date:   Wed Jul 5 15:20:06 2023 +0300
+
+    Initial commit

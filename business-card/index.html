@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -10,7 +9,26 @@
         <title>Digital business card</title>
     </head>
     <body>
-        <div class="BusinessCard">
+        <header>
+            <a href="../" title="Return to Home page" class="LogoContainer">
+                <div class="LogoName">Irimia David's</div>
+                <div class="LogoSite">Projects</div>
+            </a>
+            <div class="MenuContainer">
+                <label class="HamburgerMenu">
+                    <input type="checkbox">
+                </label>
+                <nav class="Menu">
+                    <ul class="MenuList">
+                        <li class="MenuListItem"><a href="https://dapcred.netlify.app" class="HomeMenuLink">Marșul Apărătorilor Credinței</a></li>
+                        <li class="MenuListItem"><a href="#" class="HomeMenuLink">Biserica Betel Adjud</a></li>
+                        <li class="MenuListItem"><a href="#" class="HomeMenuLink">Drum Bun</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        
+        <main class="BusinessCard">
             <div class="Card">
                 <div class="ContainerCardImage">
                     <img class="CardImage" src="david.png" alt="Irimia David looking at the camera on a mountain background" width="128" height="128">
@@ -21,6 +39,55 @@
                     <h3>Romania, Europe</h3>
                 </div>
             </div>
-        </div>
+        </main>
+        
+        <footer>
+            <div class="MainProjects">
+                <h2 class="FooterTitle">See my main projects</h2>
+                <div class="MainProjectsLinks">
+                    <a href="#" class="FooterLink">Marșul Apărătorilor Credinței</a>
+                    <a href="#" class="FooterLink">Biserica Betel Adjud</a>
+                    <a href="#" class="FooterLink">Drumuri bune</a>
+                </div>
+            </div>
+            <div class="LeaveMessage">
+                <h2 class="FooterTitle">Leave me a message</h2>
+                <input class="InputBox" type="text" name="name" id="name" placeholder="Name">
+                <input class="InputBox" type="text" name="message" id="message" placeholder="Your message here">
+                <input class="SendButton" type="button" value="Send">
+            </div>
+            <div class="SocialMedia">
+                <h2 class="FooterTitle">Get in touch with me!</h2>
+                <div class="FooterIcons">
+                    <span class="FooterIcon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M24.0199 0C10.7375 0 0 11 0 24.6084C0 35.4864 6.87988 44.6943 16.4241 47.9533C17.6174 48.1983 18.0545 47.4238 18.0545 46.7723C18.0545 46.2018 18.0151 44.2463 18.0151 42.2088C11.3334 43.6758 9.94198 39.2753 9.94198 39.2753C8.86818 36.4234 7.27715 35.6904 7.27715 35.6904C5.09022 34.1829 7.43645 34.1829 7.43645 34.1829C9.86233 34.3459 11.1353 36.7088 11.1353 36.7088C13.2824 40.4568 16.7422 39.3978 18.1341 38.7458C18.3328 37.1568 18.9695 36.0569 19.6455 35.4459C14.3163 34.8754 8.70937 32.7569 8.70937 23.3044C8.70937 20.6154 9.66321 18.4154 11.1746 16.7044C10.9361 16.0934 10.1008 13.5669 11.4135 10.1855C11.4135 10.1855 13.4417 9.53346 18.0146 12.7114C19.9725 12.1728 21.9916 11.8988 24.0199 11.8965C26.048 11.8965 28.1154 12.1819 30.0246 12.7114C34.5981 9.53346 36.6262 10.1855 36.6262 10.1855C37.9389 13.5669 37.1031 16.0934 36.8646 16.7044C38.4158 18.4154 39.3303 20.6154 39.3303 23.3044C39.3303 32.7569 33.7234 34.8344 28.3544 35.4459C29.2296 36.2198 29.9848 37.6863 29.9848 40.0088C29.9848 43.3088 29.9454 45.9573 29.9454 46.7718C29.9454 47.4238 30.383 48.1983 31.5758 47.9538C41.12 44.6938 47.9999 35.4864 47.9999 24.6084C48.0392 11 37.2624 0 24.0199 0Z" fill="white"/>
+                        </svg>
+                    </span>
+                    <span class="FooterIcon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <circle cx="24" cy="24" r="24" fill="#1877F2"/>
+                            <path d="M19 30.7007V47.4188C21.5 48 25.5 48 27 47.767V30.7007H32.5L33.5 23.7007H27C26 15.2006 29.5 15.7006 34 15.7006V9.70064C20.5 6.70084 18.5 13.7007 19.2079 23.7007H13V30.7007H19Z" fill="white"/>
+                        </svg>
+                    </span>
+                    <span class="FooterIcon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <circle cx="24" cy="24" r="24" fill="#0B69C7"/>
+                            <circle cx="15.25" cy="15.25" r="3.25" fill="white"/>
+                            <rect x="13" y="20" width="5" height="16" rx="1" fill="white"/>
+                            <path d="M36 26C36 22 33.5 19.5 30 19.5C28.8333 19.5 25 19.5 25 22V20.5C25 20.3333 24.8 20 24 20H21C20.6667 20 20 20.2 20 21V35C20 35.3333 20.2 36 21 36H24C24.3333 36 25 35.8 25 35V27C25 26.2033 25.5 24 28 24C30 24 30.5 26 30.5 27V35C30.5 35.8 31.1667 36 31.5 36H35C35.8 36 36 35.3333 36 35V26Z" fill="white"/>
+                        </svg>
+                    </span>
+                    <span class="FooterIcon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <circle cx="24" cy="24" r="24" fill="#FF0000"/>
+                            <rect x="12" y="16" width="24" height="16" rx="4" fill="white"/>
+                            <path d="M28.039 23.5784L21.2552 27.4165L21.3232 19.6226L28.039 23.5784Z" fill="#FF0000"/>
+                        </svg>
+                    </span>
+                </div>
+            </div>
+            <span class="Copyrights">All rights reserved &copy; Irimia David</span>
+        </footer>
     </body>
 </html>
