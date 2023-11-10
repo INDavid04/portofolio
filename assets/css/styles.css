@@ -32,26 +32,21 @@ body {
   margin: 0;
   padding: 0;
   background-color: #0c0523;
-  color: #d1d1d1;
+  color: #f7fff7;
   font-size: 16px;
 }
 
-a {
-  color: #56A879;
+a, .HomeMenuLink, .FooterLink {
+  color: #ade053;
   line-height: 1.8;
-  border-bottom: 1px solid #56A879;
+  border-bottom: 1px solid #ade053;
   text-decoration: none;
   transition: all 0.1s;
 }
 
-a, .HomeMenuLink, .FooterLink {
-  text-decoration: none;
-  color: #56A879;
-}
-
 a:hover {
-  color: #8F8F8F;
-  border-bottom: 2px dashed #8F8F8F;
+  color: #788f74;
+  border-bottom: 2px dashed #788f74;
 }
 
 .DesktopOnly {
@@ -121,9 +116,11 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 2rem;
   padding: 0.75rem;
-  background-color: #3E433D;
+  background-color: #3e433d;
   font-family: "Quicksand", sans-serif;
+  z-index: 2;
 }
 
 .LogoSite {
@@ -148,7 +145,7 @@ header {
   content: "";
   width: 3.125rem;
   height: 0.5rem;
-  background-color: #f1f1f1;
+  background-color: #f7fff7;
   border-radius: 1rem;
   transition: 0.7s;
 }
@@ -180,18 +177,22 @@ header {
 }
 
 .HamburgerMenu:has(input:checked) + .Menu {
-  top: 4.4rem;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: #3E433D;
+  display: block;
+  transform: translate3d(-64%, 5%, 0);
+  background-color: #788f74;
   transition: 0.9s;
 }
 
-@media (max-width: 960px) {
+.Menu {
+  display: none;
+  position: absolute;
+  transform: translate3d(-200%, 200%, 0);
+}
+@media (min-width: 960px) {
   .Menu {
-    position: absolute;
-    top: -100%;
+    display: flex;
+    position: initial;
+    transform: translate3d(0, 0, 0);
   }
 }
 
@@ -215,18 +216,18 @@ header {
 }
 
 .MenuListItem:hover, .MenuListItem:focus {
-  background-color: #423A39;
+  background-color: #ade053;
 }
 
 footer {
+  border-top: 4px solid #3e433d;
   padding: 1rem;
-  border-top: 4px solid #3E433D;
-  background-color: #423A39;
+  background-color: #3e433d;
 }
 
 .MainProjects {
   padding-bottom: 2rem;
-  border-bottom: 2px solid #3E433D;
+  border-bottom: 2px solid #3e433d;
 }
 
 .MainProjectsLinks {
@@ -238,24 +239,24 @@ footer {
 
 .LeaveMessage {
   padding-bottom: 2rem;
-  border-bottom: 2px solid #3E433D;
+  border-bottom: 2px solid #3e433d;
 }
 
 .InputBox {
   width: 100%;
   line-height: 1.875rem;
   margin: 0.2rem 0;
-  border: 2px solid #8F8F8F;
+  border: 2px solid #f7fff7;
   padding-left: 0.5rem;
-  background-color: #423A39;
-  color: #8F8F8F;
+  background-color: #788f74;
+  color: #f7fff7;
 }
 
 .SendButton {
   border: none;
   padding: 0.4rem 1rem;
-  background-color: #56A879;
-  color: #423A39;
+  background-color: #ade053;
+  color: #788f74;
   cursor: pointer;
 }
 
@@ -271,44 +272,108 @@ footer {
 /**********************************************************/
 /*                                                        */
 /*  Home page                                             */
-/*  datestamp: 29 July 2023                               */
-/*  timestamp: 15:10 - TODO:                              */
+/*  datestamp: 29 July 2023  | 10 November 2023           */
+/*  timestamp: 15:10 - TODO: | 08:00-12:00                */
 /*                                                        */
 /**********************************************************/
-.HomePage {
+.About {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto 2rem;
+}
+@media (min-width: 540px) {
+  .About {
+    width: 26rem;
+  }
+}
+@media (min-width: 820px) {
+  .About {
+    display: flex;
+    gap: 2rem;
+    width: 92%;
+  }
+}
+@media (min-width: 960px) {
+  .About {
+    width: 54rem;
+    gap: 0;
+    justify-content: space-between;
+  }
+}
+
+.Title {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+@media (min-width: 480px) {
+  .Description {
+    max-width: 24rem;
+  }
+}
+@media (min-width: 820px) {
+  .Description {
+    max-width: 40rem;
+  }
+}
+
+.About img {
+  width: 100%;
+  padding: 0;
+}
+@media (min-width: 480px) {
+  .About img {
+    width: 26rem;
+    height: auto;
+  }
+}
+@media (min-width: 820px) {
+  .About img {
+    width: 10rem;
+    heigth: auto;
+  }
+}
+
+.GridProjects {
   display: grid;
   grid-gap: 1rem;
-  background-color: #423A39;
+  margin-bottom: 2rem;
 }
 @media (min-width: 500px) {
-  .HomePage {
+  .GridProjects {
     justify-content: center;
   }
 }
 @media (min-width: 768px) {
-  .HomePage {
-    padding: 2rem;
+  .GridProjects {
+    padding: 0 2rem;
     grid-gap: 1.25rem;
     grid-template-columns: repeat(auto-fit, minmax(344px, auto));
   }
 }
 @media (min-width: 1488px) {
-  .HomePage {
-    padding: 2rem 8rem;
+  .GridProjects {
+    padding: 0 8rem;
     grid-gap: 3.75rem;
     grid-template-columns: repeat(auto-fit, minmax(400px, auto));
   }
 }
 
 .Project {
-  text-decoration: none;
-  color: #788F74;
   margin: 0;
+  border: 2px solid #788f74;
+  border-radius: 0 0 1rem 1rem;
+  padding: 0.5rem;
+  background-color: #3e433d;
+  color: #f7fff7;
+  text-decoration: none;
 }
 
 .Project:hover {
-  background-color: #423A39;
-  color: #8F8F8F;
+  background-color: #788f74;
+  color: #f7fff7;
+  border: 2px solid #ade053;
+  transition: all 1s;
 }
 
 .Project img {
