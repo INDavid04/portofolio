@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assets/css/styles.css">
-    <title>INDavid04 | Mozilla - Projects</title>
+    <link rel="stylesheet" href="./img/style.css">
+    <title>INDavid04 | Mozzila - BirdWatch</title>
 </head>
-
 <body>
     <header>
         <a href="../" title="Return to Home page" class="LogoContainer">
@@ -26,25 +26,71 @@
             </nav>
         </div>
     </header>
-
+    
     <nav>
         <ul>
             <li><a href="./" title="Web page where INDavid04 should show what he learned from developer.mozilla.org">Return to Mozzila Course Learning Projects</a></li>
             <li><a href="./practice-link.html" title="Web page where should be listed 5 sites initially">Practice links page</a></li>
             <li><a href="./pictures.html" title="Web page where INDavid04 should share some images">Pictures</a></li>
-            <li>Projects</li>
+            <li><a href="./projects.html" title="Web page where INDavid04 should share what he work">Projects</a></li>
             <li><a href="./social.html" title="Web page where INDavid04 should share what he did">Social</a></li>
             <li><a href="./letter.html" title="Web page where INDavid04 should send a letter">Letter</a></li>
             <li><a href="./whales.html" title="Web page where INDavid04 should write more than h1 and p">Whales</a></li>
-            <li><a href="./birdwatching.html" title="Web page where INDavid04 should structuring the HTML semantically">Bird watching</a></li>
+            <li>Bird watching</li>
         </ul>
     </nav>
 
     <main>
-        <h1>My projects</h1>
-        <p>Welcome to my project page, showing what exciting things I am currently doing.</p>
+        <article>
+            <h2>Structuring a page of content</h2>
+            <h2>Responsive soon...</h2>
+            <div class="ContentSpacer">
+                <div class="SpacerTitle">Bird Watching</div>
+                <div class="SpacerDate">14 November 2023</div>
+                <div class="SpacerTime">19:25 - 20:20</div>
+            </div>
+            <section class="BirdWatching">
+                <header class="BirdHeader">
+                    <h1>Birdwatching</h1>
+                    <img src="./img/dove.png" alt="a simple dove logo" width="48px">
+                </header>
+          
+                <nav>
+                    <ul>
+                        <li><span>Home</span></li>
+                        <li><a href="#">Get started</a></li>
+                        <li><a href="#">Photos</a></li>
+                        <li><a href="#">Gear</a></li>
+                        <li><a href="#">Forum</a></li>
+                    </ul>
+                </nav>
+          
+                <div class="BirdWrapper">
+                    <main class="BirdMain">
+                        <h2>Welcome</h2>
+                        <p>Welcome to our fake birdwatching site. If this were a real site, it would be the ideal place to come to learn more about birdwatching, whether you are a beginner looking to learn how to get into birding, or an expert wanting to share ideas, tips, and photos with other like-minded people.</p>
+                        <p>So don't waste time! Get what you need, then turn off that computer and get out into the great outdoors!</p>
+                    </main>
+            
+                    <aside>
+                        <h2>Favourite photos</h2>
+                        <ul class="BirdPhotos">
+                            <li><a href="./img/favorite-1.jpg"><img src="./img/favorite-1_th.jpg" alt="Small black bird, black claws, long black slender beak, links to larger version of the image" width="100px"></a></li>
+                            <li><a href="./img/favorite-2.jpg"><img src="./img/favorite-2_th.jpg" alt="Top half of a pretty bird with bright blue plumage on neck, light colored beak, blue headdress, links to larger version of the image" width="100px"></a></li>
+                            <li><a href="./img/favorite-3.jpg"><img src="./img/favorite-3_th.jpg" alt="Top half of a large bird with white plumage, very long curved narrow light colored break, links to larger version of the image" width="100px"></a></li>
+                            <li><a href="./img/favorite-4.jpg"><img src="./img/favorite-4_th.jpg" alt="Large bird, mostly white plumage with black plumage on back and rear, long straight white beak, links to larger version of the image" width="100px"></a></li>
+                        </ul>
+                    </aside>
+                </div>
+          
+                <footer class="BirdFooter">
+                    <p>This fake website example is CC0 — any part of this code may be reused in any way you wish. Original example written by Chris Mills, 2016.</p>
+                    <p><a href="http://game-icons.net/lorc/originals/dove.html">Dove icon</a> by Lorc.</p>
+                </footer>
+            </section>
+        </article>
     </main>
-
+    
     <footer>
         <div class="MainProjects">
             <h2 class="FooterTitle">See my main projects</h2>
@@ -58,7 +104,7 @@
             <h2 class="FooterTitle">Leave me a message</h2>
             <input class="InputBox" type="text" name="name" id="name" placeholder="Name">
             <input class="InputBox" type="text" name="message" id="message" placeholder="Your message here">
-                <input class="SendButton" type="button" value="Send">
+            <input class="SendButton" type="button" value="Send">
         </div>
         <div class="SocialMedia">
             <h2 class="FooterTitle">Get in touch with me!</h2>

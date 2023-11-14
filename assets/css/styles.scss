@@ -29,6 +29,12 @@ $cta: #ade053; /// #e05b53 probably
 /*                                                        */
 /**********************************************************/
 body { margin: 0; padding: 0; background-color: $background; color: $text; font-size: 16px; }
+section, h1, h2 { padding: 0 .2rem;
+    @media (min-width: 480px) { padding: 0 1rem; }
+    @media (min-width: 720px) { padding: 0 2rem; }
+    @media (min-width: 960px) { padding: 0 4rem; }
+}
+.MobilePhoto { margin: 0; }
 a, .HomeMenuLink, .FooterLink { color: $cta; line-height: 1.8; border-bottom: 1px solid $cta; text-decoration: none; transition: all .1s; }
 a:hover { color: $secondary; border-bottom: 2px dashed $secondary; }
 .DesktopOnly { display: none;
@@ -38,7 +44,7 @@ a:hover { color: $secondary; border-bottom: 2px dashed $secondary; }
     @media (min-width: 960px) { display: none; }
 }
 .ContentSpacer { background: linear-gradient(to right, #d1d1d111, #8b000050); color: darkcyan; text-align: center; font-family: "Verdana", sans-serif;
-    @media (min-width: 500px) { display: flex; flex-direction: row; justify-content: space-between; align-items: center; }
+    @media (min-width: 500px) { display: flex; flex-direction: row; justify-content: space-between; align-items: center; font-size: 1.5rem;; }
 }
     .SpacerDate { order: -1; 
         @media (min-width: 500px) and (max-width: 1000px) { width: 10rem; }
@@ -193,21 +199,32 @@ footer { border-top: 4px solid $primary; padding: 1rem; background-color: $prima
 
 /**********************************************************/
 /*                                                        */
-/*  Mozzila course                                        */
-/*  datestamp: 31 October 2023                            */
-/*  timestamp: 09:07 - 09:54                              */
+/*  Mozilla course                                        */
+/*  datestamp: 31 October 2023 | 13 - 14 November 2023    */
+/*  timestamp: 09:07 - 09:54   | 09:00 - 21:40            */
 /*                                                        */
 /**********************************************************/
-.MozzilaCourse section { margin: 0 2rem 4rem; font-family: Arial, Helvetica, sans-serif; }
-.HeadingParagraph h2,
-.HeadingParagraph h3,
-.StrongEm h2 { color: purple; }
-.HeadingParagraph p { color: gray; }
-.ListUno ul,
-.ListUno ol { border: 2px solid orange; border-radius: 5px; padding: 0.5rem 2rem; line-height: 1.8; }
+.MozillaCourse section { margin: 0 0 4rem; font-family: Arial, Helvetica, sans-serif; }
+.HeadingParagraph h2, .HeadingParagraph h3, .StrongEm h2 { color: purple; }
+.StrongEm strong, .cpurple, dt { color: purple; }
+.HeadingParagraph p, .StrongEm em, dl { color: gray; }
+.ListUno ul, .ListUno ol { border: 2px solid orange; border-radius: 5px; padding: 0.5rem 2rem; line-height: 1.8; }
 .ListUno ol { border-color: purple; }
-.StrongEm strong { color: purple; }
-.StrongEm em { color: gray; }
+dt { font-weight: bold; }
+abbr, time { color: greenyellow; }
+.LetterSender { text-align: right; }
+    .LetterSender ol { list-style: none; }
+.BirdWatching { background-color: lightgray; color: #0c0523; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
+    .BirdHeader { background-color: lightgreen; }
+        .BirdHeader h1 { margin-left: 20%; font-size: 2.5rem; letter-spacing: .2rem; }
+    .BirdWatching ul { display: flex; justify-content: space-around; align-items: center; margin-top:-5%; background-color: greenyellow; list-style: none; text-transform: uppercase; font-size: 1.2rem; }
+    .BirdWatching a { border: none; color: #0c0523; }
+    .BirdWrapper { display: flex; justify-content: space-around; background-color: lightgreen; padding: 1rem; }
+        .BirdMain { padding: 1rem; width: 58%; background-color: greenyellow; }
+            .BirdMain h2 { text-align: center; font-size: 1.75rem; }
+        .BirdWatching aside { width: 32%; background-color: greenyellow; }
+            .BirdPhotos { display: flex; flex-wrap: wrap; }
+    .BirdFooter { margin-top: 1rem; background-color: lightgreen; }
 
 /**********************************************************/
 /*                                                        */
