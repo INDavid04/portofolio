@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-us">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
@@ -8,7 +9,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="MainHeader">
         <a href="../" title="Return to Home page" class="LogoContainer">
             <div class="LogoName">Irimia David's</div>
             <div class="LogoSite">Projects</div>
@@ -44,12 +45,13 @@
         <h1>Mozilla practice</h1>
         
         <article>
-            <h2 class="ContentSpacer">
+            <div class="ContentSpacer">
                 <div class="SpacerTitle">Raw Data</div>
                 <div class="SpacerDate">28 October 2023</div>
                 <div class="SpacerTime">18:05 - 18:40</div>
-            </h2>
-            <section class="RawData">
+            </div>
+            <h2><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/HTML_text_fundamentals#why_do_we_need_structure" title="View the resource of mdn">Content without semantic tags</a></h2>
+            <section>
                 Quick hummus recipe
             
                 This recipe makes quick, tasty hummus, with no messing. It has been adapted from a number of different recipes that I have read over the years.
@@ -83,20 +85,22 @@
 
                 Hummus is suitable for freezing; you should thaw it and use it within a couple of months.
             </section>
-        </article>
+        </article> <!-- Raw data -->
 
         <article>
-            <h2 class="ContentSpacer">
+            <div class="ContentSpacer">
                 <div class="SpacerTitle">Semantic HTML</div>
                 <div class="SpacerDate">28 October 2023</div>
                 <div class="SpacerTime">18:05 - 18:50</div>
-            </h2>
+            </div>
+            <div class="tag">&lt;h1&gt; &lt;h2&gt; &lt;h3&gt; &lt;h4&gt; &lt;li&gt; &lt;h5&gt; &lt;h6&gt; &lt;p&gt;</div>
+            <h2><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/HTML_text_fundamentals#active_learning_giving_our_content_structure" title="View the resource of mdn">Content with semantic tags</a></h2>
             <section class="SemanticHTML">
-                <h2>Quick hummus recipe</h2>
+                <h3>Quick hummus recipe</h3>
                 <p>This recipe makes quick, tasty hummus, with no messing. It has been adapted from a number of different recipes that I have read over the years.</p>
                 <p>Hummus is a delicious thick paste used heavily in Greek and Middle Eastern dishes. It is very tasty with salad, grilled meats and pitta breads.</p>
                 
-                <h3>Ingredients</h3>
+                <h4>Ingredients</h4>
                 <ul>
                 <li>1 can (400g) of chick peas (garbanzo beans)</li>
                 <li>175g of tahini</li>
@@ -107,7 +111,7 @@
                 <li>A dash of olive oil</li>
                 </ul>
                 
-                <h3>Instructions</h3>
+                <h4>Instructions</h4>
                 <ol>
                 <li>Remove the skin from the garlic, and chop coarsely</li>
                 <li>Remove all the seeds and stalk from the pepper, and chop coarsely</li>
@@ -118,18 +122,19 @@
                 <p>If you want a smooth hummus, process it for a longer time</p>
                 <p>For a different flavour, you could try blending in a small measure of lemon and coriander, chili pepper, lime and chipotle, harissa and mint, or spinach and feta cheese. Experiment and see what works for you.</p>
                 
-                <h3>Storage</h3>
+                <h4>Storage</h4>
                 <p>Refrigerate the finished hummus in a sealed container. You should be able to use it for about a week after you've made it. If it starts to become fizzy, you should definitely discard it.</p>
                 <p>Hummus is suitable for freezing; you should thaw it and use it within a couple of months.</p>
             </section>
-        </article>
+        </article> <!-- Semantic HTML -->
 
         <article>
-            <h2 class="ContentSpacer">
+            <div class="ContentSpacer">
                 <div class="SpacerTitle">Nested list</div>
                 <div class="SpacerDate">28 October 2023</div>
                 <div class="SpacerTime">18:50 - 19:00</div>
-            </h2>
+            </div>
+            <h2><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/HTML_text_fundamentals#nesting_lists" title="View the resource of mdn ">List nested in another list</a></h2>
             <section class="NestedList">
                 <ol>
                     <li>Remove the skin from the garlic, and chop coarsely</li>
@@ -143,14 +148,16 @@
                     </ol>
                 </ol>
             </section>
-        </article>
+        </article> <!-- Nested List -->
 
         <article>
-            <h2 class="ContentSpacer">
+            <div class="ContentSpacer">
                 <div class="SpacerTitle">Heading & Paragraph</div>
                 <div class="SpacerDate">30 October 2023</div>
                 <div class="SpacerTime">21:05 - 22:00</div>
-            </h2>
+            </div>
+            <div class="tag">&lt;h1&gt; &lt;p&gt;</div>
+            <h2><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Test_your_skills:_HTML_text_basics#task_1" title="View the resource of mdn ">Task - Text basics</a></h2>
             <section class="HeadingParagraph">
                 <h2>Basic HTML Animals</h2>
                 <p>This is the first paragraph in our page. It introduces our animals.</p>
@@ -159,14 +166,16 @@
                 <h3>The Anaconda</h3>
                 <p>The crafty anaconda likes to slither around the page, travelling rapidly by way of anchors to sneak up on his prey.</p>
             </section>
-        </article>
+        </article> <!-- Heading & Paragraph  -->
 
         <article>
-            <h2 class="ContentSpacer">
+            <div class="ContentSpacer">
                 <div class="SpacerTitle">Unorder & Ordered Lists</div>
                 <div class="SpacerDate">31 October 2023</div>
                 <div class="SpacerTime">08:55 - 09:30</div>
-            </h2>
+            </div>
+            <div class="tag">&lt;ul&gt; &lt;ol&gt; &lt;li&gt;</div>
+            <h2><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Test_your_skills:_HTML_text_basics#task_2" title="View the resource of mdn ">Task - Lists</a></h2>
             <section class="ListUno">
                 <h2>Looking at lists</h2>
                 <p>Turn the following list of my favorite vegetables into an unordered list.</p>
@@ -184,55 +193,60 @@
                     <li>Turn the handle and push</li>
                 </ol>
             </section>
-        </article>
+        </article> <!-- Unorder & Ordered Lists -->
 
         <article>
-            <h2 class="ContentSpacer">
+            <div class="ContentSpacer">
                 <div class="SpacerTitle">Strong & Emphasis</div>
                 <div class="SpacerDate">31 October 2023</div>
                 <div class="SpacerTime">09:30 - 10:00</div>
-            </h2>
+            </div>
+            <div class="tag">&lt;strong&gt; &lt;em&gt;</div>
+            <h2><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Test_your_skills:_HTML_text_basics#task_3" title="View the resource of mdn ">Task - Intonation</a></h2>
             <section class="StrongEm">
-                <h2>Emphasis and importance</h2>
+                <h3>Emphasis and importance</h3>
                 <p>There are <strong>two</strong> things I care about — <strong>music</strong> and <strong>friends</strong>. Someday I <em>might</em> be able to get my friends interested in each other, <em>and</em> my music!</p>
             </section>
-        </article>
+        </article> <!-- Strong & Emphasis -->
 
         <article>
-            <h2 class="ContentSpacer">
+            <div class="ContentSpacer">
                 <div class="SpacerTitle">Hyperlinks</div>
                 <div class="SpacerDate">7 November 2023</div>
                 <div class="SpacerTime">11:15 - 14:30</div>
-            </h2>
+            </div>
+            <div class="tag">&lt;a&gt;</div>
+            <h2><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Creating_hyperlinks" title="View the resource of mdn ">Learn - Links</a></h2>
             <section id="hyperlinks" class="Hyperlinks">
                 <h3>Check <a href="https://indavid04.netlify.app" title="Visit https://indavid04.netlify.app">my portofolio.</a></h3>
-                <a class="MobilePhoto" href="https://youtu.be/ejPDEJvlEnc" title="Watch National Arena event by Profides, Cristocentric, Biji"><img src="../assets/img/national-arena.jpg" alt="National Arena live view from Profides Event" width="300px" height="auto"></a>
+                <a class="MobilePhoto" href="https://youtu.be/ejPDEJvlEnc" title="Watch National Arena event by Profides, Cristocentric, Biji"><img src="../assets/img/national-arena.jpg" alt="National Arena live view from Profides Event" width="300" height="auto"></a>
                 <p>Go to <a href="./practice-link.html">this page</a> to view what I practiced from <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Creating_hyperlinks#active_learning_creating_a_navigation_menu">Mozilla course.</a></p>
                 <a href="mailto:nowhere@mozilla.org?cc=name2@rapidtables.com&bcc=name3@rapidtables.com&subject=The%20subject%20of%20the%20email&body=The%20body%20of%20the%20email">Send mail with cc, bcc, subject and body</a>
             </section>
-        </article>
+        </article> <!-- Hyperlinks -->
 
         <article>
-            <h2 class="ContentSpacer"> 
+            <div class="ContentSpacer"> 
                 <div class="SpacerTitle">Hyperlinks | Task1</div> 
                 <div class="SpacerDate">7 November 2023</div> 
                 <div class="SpacerTime">18:40 - 19:15</div> 
-            </h2>
+            </div>
+            <h2><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Test_your_skills:_Links#task_1" title="Visit developer.mozilla.org">Task - Whales Link</a></h2>
             <section>
-                <h2>Information on Whales</h2>
+                <h3>Information on Whales</h3>
                 <p>For more information on our conservation activities and which Whales we study,
                 see our <a href="./whales.html" title="This web page contain info about Blue Whales and Sperm Whales" target="_blank" rel="noreferrer">Whales page</a>.</p>
                 <p>If you want to ask our team more questions, feel free to <a href="mailto:whales@example.com?subject=Question%20about%20Whales" title="Leave us an email with any decent question" target="_blank" rel="noreferrer">email us</a>.</p>
-                <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Test_your_skills:_Links#task_1">View the mozilla task</a>
             </section>
-        </article>
+        </article> <!-- Hyperlinks task 1 -->
 
         <article>
-            <h2 class="ContentSpacer"> 
+            <div class="ContentSpacer"> 
                 <div class="SpacerTitle">Hyperlinks | Task2</div> 
                 <div class="SpacerDate">7 November 2023</div> 
                 <div class="SpacerTime">19:20 - 19:30</div> 
-            </h2>
+            </div>
+            <h2><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Test_your_skills:_Links#task_2" title="Visit developer.mozilla.org">Task - Navigation Links</a></h2>
             <section>
                 <h2>List path tests</h2>
                 <ul>
@@ -243,30 +257,30 @@
                 </ul>
                 <div>&nbsp;</div>
                 <p id="bottom">The bottom of the page!</p>
-                <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Test_your_skills:_Links#task_2">View the mozilla task</a>
             </section>
-        </article>
+        </article> <!-- Hyperlinks task 2 -->
 
         <article>
-            <h2 class="ContentSpacer"> 
+            <div class="ContentSpacer"> 
                 <div class="SpacerTitle">Hyperlinks | Task3</div> 
                 <div class="SpacerDate">7 November 2023</div> 
                 <div class="SpacerTime">19:30 - 19:45</div> 
-            </h2>
+            </div>
             <section>
                 <p>We do lots of work with Narwhals. To find out more about this work, <a href="../assets/img/narwhal.jpg" title="View in a New tab a photo with a Narwhal" target="_blank" rel="noreferrer">open this Narwhal image in a new tab</a>.</p>
                 <p>You can email our support team if you have any more questions — <a href="mailto:whales@example.com" title="Open the deafult mail app for Sending an email to whales@example.com">send a mail to whales@example.com</a> to do so.</p>
                 <p>You can also <a href="./factfile.pdf" title="Download or view in a new tab this Factfile" target="_blank" rel="noreferrer">download this factfile (size of 4MB)</a> to download our factfile, which contains lots more information, including an FAQ.</p>
-                <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Test_your_skills:_Links#task_3">View the mozilla task</a>  
+                <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Test_your_skills:_Links#task_3">View the resource of mdn mozilla task</a>  
             </section>
-        </article>
+        </article> <!-- Hyperlinks task 3 -->
         
         <article>
-            <h2 class="ContentSpacer"> 
+            <div class="ContentSpacer"> 
                 <div class="SpacerTitle">Advanced text formatting</div> 
                 <div class="SpacerDate">13 November 2023</div> 
                 <div class="SpacerTime">09:40 - 11:30</div> 
-            </h2>
+            </div>
+            <div class="tag">&lt;dl&gt; &lt;dt&gt; &lt;dt&gt; &lt;blockquote&gt; &lt;abbr&gt; &lt;address&gt; &lt;sup&gt; &lt;sub&gt; &lt;code&gt; &lt;pre&gt; &lt;var&gt; &lt;kbd&gt; &lt;samp&gt; &lt;time&gt;</div>
             <h2>Definition Lists</h2>
             <section>
                 <dl>
@@ -355,11 +369,11 @@
         </article> <!-- Advanced text formatting -->
 
         <article>
-            <h2 class="ContentSpacer"> 
+            <div class="ContentSpacer"> 
                 <div class="SpacerTitle">Advanced text formatting | Tasks</div> 
                 <div class="SpacerDate">13 November 2023</div> 
                 <div class="SpacerTime">21:10 - 21:40</div> 
-            </h2>
+            </div>
             <section>
                 <h2 class="cpurple">Advanced HTML Animals</h2>
                 <dl>
@@ -383,13 +397,13 @@
         </article> <!-- Advanced text formatting - tasks -->
 
         <article>
-            <h2 class="ContentSpacer"> 
+            <div class="ContentSpacer">
                 <div class="SpacerTitle">Doc and site structure & Debugging HTML</div> 
                 <div class="SpacerDate">14 November 2023</div> 
                 <div class="SpacerTime">09:00 - 12:40</div> 
-            </h2>
-            <h2>Before - raw content</h2>
+            </div>
             <section>
+                <h2>Before - raw content</h2>
                 <h3>HTML debugging examples</h3>
                 <p>What causes errors in HTML?
                 <ul>
@@ -398,16 +412,16 @@
                     <li>Badly nested elements: Nesting elements properly is also very important
                         for code behaving correctly. <strong>strong <em>strong emphasized?</strong>
                         what is this?</em>
-                    <li>Unclosed attributes: Another common source of HTML problems. Let's
+                    <sto>Unclosed attributes: Another common source of HTML problems. Let's
                         look at an example: <!--<a href="https://www.mozilla.org/>-->link to Mozilla
-                        homepage <!--</a>--> <!-- Remove comments for original view -->
+                        homepage</strong> <!--</a>--> <!-- Remove comments and </strong> for original view -->
                 </ul>
-                <img src="../assets/img/mozdeb1.webp" alt="Screenshot of html validator raw code with errors" title="Screenshot of html validator raw code with errors" width="720px">
-                <img src="../assets/img/mozdeb2.webp" alt="Screenshot of html validator first four errors 1 - 4" title="Screenshot of html validator first four errors 1 - 4" width="720px">
-                <img src="../assets/img/mozdeb3.webp" alt="Screenshot of html validator last four errors 5 - 8" title="Screenshot of html validator last four errors 5 - 8" width="720px">
+                <img src="../assets/img/mozdeb1.webp" alt="Screenshot of html validator raw code with errors" title="Screenshot of html validator raw code with errors" width="720">
+                <img src="../assets/img/mozdeb2.webp" alt="Screenshot of html validator first four errors 1 - 4" title="Screenshot of html validator first four errors 1 - 4" width="720">
+                <img src="../assets/img/mozdeb3.webp" alt="Screenshot of html validator last four errors 5 - 8" title="Screenshot of html validator last four errors 5 - 8" width="720">
             </section>
-            <h3>After - corrected code</h3>
             <section>
+                <h3>After - corrected code</h3>
                 <h4>HTML debugging examples</h4>
                 <p>What causes errors in HTML?</p> 
                 <ul>
@@ -417,12 +431,764 @@
                         what is this?</li>
                     <li>Unclosed attributes: Another common source of HTML problems. Let's look at an example: <a href="https://www.mozilla.org/">link to Mozilla homepage.</a></li>
                 </ul>
-                <img src="../assets/img/mozdeb4.webp" alt="Screenshot of html validator with no errors" title="Screenshot of html validator with no errors" width="720px">
+                <img src="../assets/img/mozdeb4.webp" alt="Screenshot of html validator with no errors" title="Screenshot of html validator with no errors" width="720">
             </section>
         </article> <!-- Doc and site structure & Debugging HTML -->
+
+        <article>
+            <div class="ContentSpacer"> 
+                <div class="SpacerTitle">Images in HTML</div> 
+                <div class="SpacerDate">15 November 2023</div> 
+                <div class="SpacerTime">08:30 - 09:50</div> 
+            </div>
+            <div class="tag">&lt;img&gt; &lt;figure&gt; &lt;figcaption&gt;</div>
+            <h2>Embedding an image</h2>
+            <section>
+                <img src="https://raw.githubusercontent.com/mdn/learning-area/master/html/multimedia-and-embedding/images-in-html/dinosaur_small.jpg" alt="Dinosaur skeleton on a white background thing" width="200" height="171" title="This skeleton is a piece of art from USA">
+            </section>
+            <h2>Fgure & figcapttion</h2>
+            <section>
+                <figure>
+                    <img src="https://raw.githubusercontent.com/mdn/learning-area/master/html/multimedia-and-embedding/images-in-html/dinosaur_small.jpg" alt="Dinosaur skeleton on a white background thing" width="200" height="171">
+                    <figcaption>This skeleton is a piece of art from USA</figcaption>
+                </figure>
+            </section>
+            <h2>Tasks - <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Images_in_HTML/Test_your_skills:_HTML_images" title="View task steps from developer.mozilla.org">HTML images</a></h2>
+            <section>
+                <h3>09:12 - 09:29</h3>
+                <img src="./img/blueberries.webp" alt="A lot of blueberries filling the viewport" width="500">
+            </section>
+            <section>
+                <h3>09:30 - 09:33</h3>
+                <img src="./img/larch.webp" alt="Two orange trees with some forest tree near them and blue sky" width="500" title="Larch">
+            </section>
+            <section>
+                <h3>09:33 - 09:37</h3>
+                <figure>
+                    <img src="./img/firefox.webp" alt="An abstract flaming fox wrapping around a blue sphere" width="444">
+                    <figcaption>The Firefox logo, newly abstracted for 2019!</figcaption>
+                </figure>
+            </section>
+        </article> <!-- Images in HTML -->
+
+        <article>
+            <div class="ContentSpacer"> 
+                <div class="SpacerTitle">Video and audio content</div> 
+                <div class="SpacerDate">15 November 2023</div> 
+                <div class="SpacerTime">09:53 - 11:00</div> 
+            </div>
+            <div class="tag">&lt;video&gt; &lt;audio&gt; &lt;source&gt; &lt;track&gt;</div>
+            <section>
+                <h3>WebVTT file format and track tag</h3>
+                <!-- <video  src="./test.webm controls"></video> -->
+                <video width="320" height="200" preload="auto" poster="./img/blueberries.webp" controls preload="auto">
+                    <source src="../assets/media/rabbit320.webm" type="video/webm">
+                    <source src="../assets/media/rabbit320.mp4" type="video/mp4">
+                    <track kind="captions" src="../assets/media/rabbit320.vtt" srclang="en" label="English" default>
+                    <p>Your browser does not support this video format. Here is the <a href="../assets/media/rabbit320.webm">Link to the video</a>!</p> <!-- Fallback content -->
+                </video>
+            </section>
+            <h2>Tasks - <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Video_and_audio_content/Test_your_skills:_Multimedia_and_embedding">Multimedia and embedding</a></h2>
+            <section>
+                <h3>10:42 - 10:52</h3>
+                <audio controls>
+                    <source src="../assets/media/thehistoryoftheweb-2017.ogg" type="audio/ogg">
+                    <source src="../assets/media/thehistoryoftheweb-2017.mp3" type="audio/mp3">
+                    <p>Your browser does not support this audio format. Here is the <a href="../assets/media/thehistoryoftheweb-2017.mp3">Link to the audio file - The history of the web 2017 (2MB)</a>!</p> <!-- Fallback content -->
+                </audio>
+            </section>
+            <section>
+                <h3>10:53 - 11:00</h3>
+                <video controls width="320" height="240" muted>
+                    <source src="../assets/media/rabbit320.webm" type="video/webm">
+                    <source src="../assets/media/rabbit320.mp4" type="video/mp4">
+                    <track kind="subtitles" src="../assets/media/subtitles-en.vtt" srclang="en" label="English" default>
+                    <p>Your browser does not support this video format. Here is the <a href="../assets/media/">Link to the video</a>!</p> <!-- Fallback content -->
+                </video>
+            </section>
+            <section>
+                <h3>19:20 - 19:35</h3>
+                <object data="./factfile.pdf" type="application/pdf" width="720" height="480">
+                    <p>You can not view the pdf inside of this page. Instead, you can <a href="./factfile.pdf" title="Open a new tab to view it">download the pdf (15KB)</a></p>
+                </object>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2744.6399142017317!2d26.91171247644457!3d46.53502687111167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b571bebc0c84bb%3A0xe86f93bdb51b6c4c!2sDirec%C5%A3ia%20Jude%C5%A3ean%C4%83%20de%20Eviden%C5%A3%C4%83%20a%20Persoanelor%20Bac%C4%83u%20si%20Serviciul%20Public%20Comunitar%20Regim%20Permise%20de%20conducere%20si%20Inmatriculari%20Vehicule%20(SPCRPCIV!5e0!3m2!1sro!2sro!4v1700069241918!5m2!1sro!2sro" width="720" height="480" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" sandbox="">
+                    <p>You can not view the pdf inside of this page. Instead, you can <a href="#" title="Open a new tab to view it">visit the web site</a></p>
+                </iframe>
+                <iframe width="720" height="480" src="https://www.youtube.com/embed/JK6BCshUg1E?list=PL2W5NV0Rui2DQFDQUf9SvBtKCirPDL4bQ" title="Day#1 Preparing for Website&#39;s Header" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen sandbox="">
+                    <p>You can not view the pdf inside of this page. Instead, you can <a href="#" title="Open a new tab to view it">visit the web site.</a></p>
+                </iframe>
+            </section>
+        </article> <!-- Video and audio content -->
+
+        <article>
+            <div class="ContentSpacer"> 
+                <div class="SpacerTitle">From object to iframe</div> 
+                <div class="SpacerDate">15 November 2023</div> 
+                <div class="SpacerTime">13:35 - 16:50</div> 
+            </div>
+            <div class="tag">&lt;iframe&gt;, &lt;object&gt;, &lt;embed&gt;</div>
+            <section>
+                <h3>As <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Other_embedding_technologies">Mozilla developper</a> says:</h3>
+                <blockquote>
+                    Note: In order to improve speed, it's a good idea to set the iframe's src attribute with JavaScript after the main content is done with loading. This makes your page usable sooner and decreases your official page load time (an important SEO metric.)
+                </blockquote>
+            </section>
+        </article> <!-- From object to iframe -->
+
+        <article>
+            <div class="ContentSpacer"> 
+                <div class="SpacerTitle">Adding vector graphics to the web</div> 
+                <div class="SpacerDate">16 November 2023</div> 
+                <div class="SpacerTime">10:15 - 10:55</div> 
+            </div>
+            <div class="tag">&lt;svg&gt;</div>
+            
+            <h2><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Adding_vector_graphics_to_the_Web" title="View the resource of mdn">Raster VS Vector</a></h2>
+            <section>
+                <h3>Playing with what they offered me</h3>
+                <svg width="100%" height="100%">
+                    <rect width="100%" height="100%" fill="darkred" />
+                    <circle cx="100%" cy="150%" r="180" fill="forestgreen" stroke="white" stroke-width="5" />
+                    <polygon points="75,5 380,120 0,120" fill="yellowgreen"/>
+                    <text x="50" y="100" font-family="Verdana" font-size="54"
+                          fill="black" stroke="green" stroke-width="0">
+                            Hello!
+                    </text>
+                  </svg>
+            </section>
+        </article> <!-- Adding vector graphics to the web -->
+
+        <article>
+            <div class="ContentSpacer"> 
+                <div class="SpacerTitle">Responsive images</div> 
+                <div class="SpacerDate">16 November 2023</div> 
+                <div class="SpacerTime">11:00 - 14:00</div> 
+            </div>
+            <div class="tag">&lt;img srcset=""&gt; &lt;picture&gt;</div>
+            
+            <h2><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images#resolution_switching_different_sizes" title="View the resource of mdn">Using srcset atribute</a></h2>
+            <section>
+                <figure class="FlexBox">
+                    <img srcset="./img/rawdeb480.webp 480w, ./img/rawdeb800.webp 800w" sizes="(min-width: 800px), 480px 800px" src="./img/rawdeb800.jpg" alt="Screenshot of html validator raw code with errors">
+                    <figcaption>
+                        Image of HTML validator. Down here is the atributes of img tag:<br>
+                        srcset="./img/rawdeb480.webp 480w, ./img/rawdeb800.webp 800w"<br>
+                        sizes="480px, (min-width: 800px) 800px"<br>
+                        src="./img/rawdeb800.jpg"<br>
+                        alt="Screenshot of html validator raw code with errors"
+                    </figcaption>
+                </figure>
+            </section>
+            
+            <h2><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images#art_direction" title="View the resource of mdn">Using picture - art direction</a></h2>
+            <section>
+                <figure class="FlexBox">
+                    <picture>
+                        <source media="(min-width: 500px)" srcset="./img/firstdeb800.webp" />
+                        <source srcset="./img/firstdeb480.webp" />
+                        <img src="./img/firstdeb800.jpg" alt="Screenshot of html validator first four errors 1 - 4" />
+                    </picture>
+                    <figcaption>
+                        Image of HTML validator.<br>sDown here is the source code of picture tag:<br>
+                        &lt;source media="(min-width: 500px)"<br>srcset="./img/firstdeb800.webp" /&gt;<br>
+                        &lt;source srcset="./img/firstdeb480.webp" /&gt;<br>
+                        &lt;img src="./img/firstdeb800.jpg"<br>alt="HTML validator first four errors 1 - 4" /&gt;
+                    </figcaption>
+                </figure>
+            </section>
+        </article> <!-- Responsive images -->
+
+        <article>
+            <div class="ContentSpacer"> 
+                <div class="SpacerTitle">HTML table basics</div> 
+                <div class="SpacerDate">17 November 2023</div> 
+                <div class="SpacerTime">08:00 - 09:20</div> 
+            </div>
+            <div class="tag">&lt;table&gt; &lt;td&gt; &lt;th&gt; &lt;colgroup&gt; &lt;col&gt;</div>
+            
+            <h2><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables/Basics#active_learning_creating_your_first_ta" title="View the resource of mdn">Creating a simple table</a></h2>
+            <section>
+                <table>
+                    <tr>
+                        <td>Hello! I'm a cell, the smallest unit of table.</td>
+                        <td>I'm the second cell.</td>
+                        <td>I'm the third cell.</td>
+                        <td>I'm the fourth cell.</td>
+                    </tr>
+                    <tr>
+                        <td>Second row, first cell</td>
+                        <td>Cell 2</td>
+                        <td>Cell 3</td>
+                        <td>Cell 4</td>
+                    </tr>
+                </table>
+            </section>
+
+            <h2><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables/Basics#active_learning_table_headers" title="View the resource of mdn">Table Headers</a></h2>
+            <section>
+                <table>
+                    <tr>
+                      <td>&nbsp;</td>
+                      <td>Knocky</td>
+                      <td>Flor</td>
+                      <td>Ella</td>
+                      <td>Juan</td>
+                    </tr>
+                    <tr>
+                      <th>Breed</th>
+                      <td>Jack Russell</td>
+                      <td>Poodle</td>
+                      <td>Streetdog</td>
+                      <td>Cocker Spaniel</td>
+                    </tr>
+                    <tr>
+                      <th>Age</th>
+                      <td>16</td>
+                      <td>9</td>
+                      <td>10</td>
+                      <td>5</td>
+                    </tr>
+                    <tr>
+                      <th>Owner</t>
+                      <td>Mother-in-law</td>
+                      <td>Me</td>
+                      <td>Me</td>
+                      <td>Sister-in-law</td>
+                    </tr>
+                    <tr>
+                      <th>Eating Habits</th>
+                      <td>Eats everyone's leftovers</td>
+                      <td>Nibbles at food</td>
+                      <td>Hearty eater</td>
+                      <td>Will eat till he explodes</td>
+                    </tr>
+                </table>
+            </section>
+
+            <h2><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables/Basics#allowing_cells_to_span_multiple_rows_and_columns" title="View the resource of mdn">Span atribute</a></h2>
+            <section>
+                <table>
+                    <tr>
+                      <th colspan="2">Animals</th>
+                    </tr>
+                    <tr>
+                      <th colspan="2">Hippopotamus</th>
+                    </tr>
+                    <tr>
+                      <th rowspan="2">Horse</th>
+                      <td>Mare</td>
+                    </tr>
+                    <tr>
+                      <td>Stallion</td>
+                    </tr>
+                    <tr>
+                      <th colspan="2">Crocodile</th>
+                    </tr>
+                    <tr>
+                      <th rowspan="2">Chicken</th>
+                      <td>Hen</td>
+                    </tr>
+                    <tr>
+                      <td>Rooster</td>
+                    </tr>
+                </table>
+            </section>
+
+            <h2><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables/Basics#styling_without_col" title="View the resource of mdn">Colgroup & col elements</a></h2>
+            <section>
+                <figcaption class="FlexBox">
+                    <table>
+                        <tr>
+                            <th>Data 1</th>
+                            <th style="background-color: darkkhaki">Data 2</th>
+                        </tr>
+                        <tr>
+                            <td>Calcutta</td>
+                            <td style="background-color: darkkhaki">Orange</td>
+                        </tr>
+                        <tr>
+                            <td>Robots</td>
+                            <td style="background-color: darkkhaki">Jazz</td>
+                        </tr>
+                    </table>
+                    <caption>
+                        Inside of table:<br>
+                        &lt;tr&gt;
+                        &#9;&lt;th&gt;Data 1&lt;/th&gt;<br>
+                        &Tab;&lt;th&gt; style="background-color: yellow">Data 2&lt;/th&gt;<br>
+                        &lt;/tr&gt;<br>
+                        &lt;tr&gt;
+                        &Tab;&lt;td&gt;Calcutta&lt;/td&gt;<br>
+                        &Tab;&lt;td&gt; style="background-color: yellow">Orange&lt;/td&gt;<br>
+                        &lt;/tr&gt;<br>
+                        &lt;tr&gt;
+                        &Tab;&lt;td&gt;Robots&lt;/td&gt;<br>
+                        &Tab;&lt;td&gt; style="background-color: yellow">Jazz&lt;/td&gt;<br>
+                        &lt;/tr&gt;
+                    </caption>
+                </figcaption>
+                <figcaption class="FlexBox">
+                    <table>
+                        <colgroup>
+                            <col />
+                            <col style="background-color: darkkhaki;" />
+                        </colgroup>
+                        <tr>
+                            <th>Data 1</th>
+                            <th>Data 2</th>
+                        </tr>
+                        <tr>
+                            <td>Calcutta</td>
+                            <td>Orange</td>
+                        </tr>
+                        <tr>
+                            <td>Robots</td>
+                            <td>Jazz</td>
+                        </tr>
+                    </table>
+                    <caption>
+                        Inside of colgroup element:<br>
+                        &lt;col style="background-color: darkkhaki;" /&gt;
+                    </caption>
+                </figcaption>
+                <table>
+                    <caption>School schedule with four periods</caption>
+                    <colgroup>
+                        <col span="2">
+                        <col style="background-color: #97DB9A;">
+                        <col width: 42px;>
+                        <col style="background-color: #97DB9A;">
+                        <col style="border: 4px solid #C1437A; background-color: #DCC48E;">
+                        <col span="2" style="width: 42px;">
+                    </colgroup>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <th>Mon</th>
+                        <th>Tues</th>
+                        <th>Wed</th>
+                        <th>Thurs</th>
+                        <th>Fri</th>
+                        <th>Sat</th>
+                        <th>Sun</th>
+                    </tr>
+                    <tr>
+                        <th>1st period</th>
+                        <td>English</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>German</td>
+                        <td>Dutch</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <th>2nd period</th>
+                        <td>English</td>
+                        <td>English</td>
+                        <td>&nbsp;</td>
+                        <td>German</td>
+                        <td>Dutch</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <th>3rd period</th>
+                        <td>&nbsp;</td>
+                        <td>German</td>
+                        <td>&nbsp;</td>
+                        <td>German</td>
+                        <td>Dutch</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <th>4th period</th>
+                        <td>&nbsp;</td>
+                        <td>English</td>
+                        <td>&nbsp;</td>
+                        <td>English</td>
+                        <td>Dutch</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                  </table>
+            </section>
+        </article> <!-- HTML table basics -->
+
+        <article>
+            <div class="ContentSpacer"> 
+                <div class="SpacerTitle">HTML table advanced</div> 
+                <div class="SpacerDate">17 November 2023</div> 
+                <div class="SpacerTime">12:30 - 14:15</div> 
+            </div>
+            <div class="tag">&lt;caption&gt; &lt;thead&gt; &lt;tfoot&gt; &lt;tbody&gt; &lt;th scope=""&gt; &lt;td headers=""&gt;</div>
+            
+            <h2><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables/Advanced/#active_learning_adding_table_structure" title="View the resource of mdn">Adding table structure</a></h2>
+            <section>
+                <table class="SpendMoney">
+                    <caption>How I chose to spend my money</caption>
+                    <thead>
+                        <tr>
+                            <th>Purchase</th>
+                            <th>Location</th>
+                            <th>Date</th>
+                            <th>Evaluation</th>
+                            <th>Cost (€)</th>
+                        </tr>
+                    </thead>
+                    <tfoot>
+                        <tr>
+                            <td colspan="4">SUM</td>
+                            <td>118</td>
+                        </tr>
+                    </tfoot>
+                    <tbody>
+                        <tr>
+                            <td>Haircut</td>
+                            <td>Hairdresser</td>
+                            <td>12/09</td>
+                            <td>Great idea</td>
+                            <td>30</td>
+                        </tr>
+                        <tr>
+                            <td>Lasagna</td>
+                            <td>Restaurant</td>
+                            <td>12/09</td>
+                            <td>Regrets</td>
+                            <td>18</td>
+                        </tr>
+                        <tr>
+                            <td>Shoes</td>
+                            <td>Shoeshop</td>
+                            <td>13/09</td>
+                            <td>Big regrets</td>
+                            <td>65</td>
+                        </tr>
+                        <tr>
+                            <td>Toothpaste</td>
+                            <td>Supermarket</td>
+                            <td>13/09</td>
+                            <td>Good</td>
+                            <td>5</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <h2><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables/Advanced#active_learning_playing_with_scope_and_headers" title="View the resource of mdn">Scope and Headers atributes</a></h2>
+            <section>
+                <div class="FlexBox">
+                    <div>
+                        <h3>&lt;th scope=""&gt;</h3>
+                        <figure>
+                            <img srcset="./img/scope500.webp" src="./img/scope500.jpg" alt="Screenshot of scope atribute used in this table" width="500">
+                            <figcaption>Code of part with scope atribute of Items Sold</figcaption>
+                        </figure>
+                        <table class="Scope">
+                            <caption>Items Sold August 2016</caption>
+                            <thead>
+                                <tr>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <th scope="colgroup" colspan="3">Clothes</th>
+                                    <th scope="colgroup" colspan="2">Accessories</th>
+                                </tr>
+                                <tr>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <th scope="col">Trousers</th>
+                                    <th scope="col">Skirts</th>
+                                    <th scope="col">Dresses</th>
+                                    <th scope="col">Bracelets</th>
+                                    <th scope="col">Rings</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="rowgroup" rowspan="3">Belgium</th>
+                                    <th scope="row">Antwerp</th>
+                                    <td>56</td>
+                                    <td>22</td>
+                                    <td>43</td>
+                                    <td>72</td>
+                                    <td>23</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Gent</th>
+                                    <td>46</td>
+                                    <td>18</td>
+                                    <td>50</td>
+                                    <td>61</td>
+                                    <td>15</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Brussels</th>
+                                    <td>51</td>
+                                    <td>27</td>
+                                    <td>38</td>
+                                    <td>69</td>
+                                    <td>28</td>
+                                </tr>
+                                <tr>
+                                    <th scope="rowgroup" rowspan="2">The Netherlands</th>
+                                    <th scope="row">Amsterdam</th>
+                                    <td>89</td>
+                                    <td>34</td>
+                                    <td>69</td>
+                                    <td>85</td>
+                                    <td>38</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Utrecht</th>
+                                    <td>80</td>
+                                    <td>12</td>
+                                    <td>43</td>
+                                    <td>36</td>
+                                    <td>19</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                        <h3>&lt;td headers=""&gt;</h3>
+                        <figure>
+                            <img srcset="./img/headers500.webp" src="./img/headers500.jpg" alt="Screenshot of headers atribute used in this table" width="500">
+                            <figcaption>Code of part with headers atribute of Items Sold</figcaption>
+                        </figure>
+                        <table class="Headers">
+                            <caption>Items Sold August 2016</caption>
+                            <thead>
+                                <tr>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <th id="clothes" colspan="3">Clothes</th>
+                                    <th id="accessories" colspan="2">Accessories</th>
+                                </tr>
+                                <tr>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <th id="trousers">Trousers</th>
+                                    <th id="skirts">Skirts</th>
+                                    <th id="dresses">Dresses</th>
+                                    <th id="bracelets">Bracelets</th>
+                                    <th id="rings">Rings</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th id="belgium" rowspan="3">Belgium</th>
+                                    <th id="antwerp">Antwerp</th>
+                                    <td headers="belgium clothes trousers">56</td>
+                                    <td headers="belgium antwerp clothes skirts">22</td>
+                                    <td headers="belgium antwerp clothes dresses">43</td>
+                                    <td headers="belgium antwerp accessories bracelets">72</td>
+                                    <td headers="antwerp accessories rings">23</td>
+                                </tr>
+                                <tr>
+                                    <th id="gent">Gent</th>
+                                    <td headers="belgium gent clothes trousers">46</td>
+                                    <td headers="belgium gent clothes skirts">18</td>
+                                    <td headers="belgium gent clothes dresses">50</td>
+                                    <td headers="belgium gent accessories bracelets">61</td>
+                                    <td headers="belgium gent accessories rings">15</td>
+                                </tr>
+                                <tr>
+                                    <th id="brussels">Brussels</th>
+                                    <td headers="belgium brussels clothes trousers">51</td>
+                                    <td headers="belgium brussels clothes skirts">27</td>
+                                    <td headers="belgium brussels clothes dresses">38</td>
+                                    <td headers="belgium brussels accessories bracelets">69</td>
+                                    <td headers="belgium brussels accessories rings">28</td>
+                                </tr>
+                                <tr>
+                                    <th id="netherlands" rowspan="2">The Netherlands</th>
+                                    <th id="amsterdam">Amsterdam</th>
+                                    <td headers="netherlands amsterdam clothes trousers">89</td>
+                                    <td headers="netherlands amsterdam clothes skirts">34</td>
+                                    <td headers="netherlands amsterdam clothes dresses">69</td>
+                                    <td headers="netherlands amsterdam accessories bracelets">85</td>
+                                    <td headers="netherlands amsterdam accessories rings">38</td>
+                                </tr>
+                                <tr>
+                                    <th id="utrecht">Utrecht</th>
+                                    <td headers="netherlands utrecht clothes trousers">80</td>
+                                    <td headers="netherlands utrecht clothes skirts">12</td>
+                                    <td headers="netherlands utrecht clothes dresses">43</td>
+                                    <td headers="netherlands utrecht accessories bracelets">36</td>
+                                    <td headers="netherlands utrecht accessories rings">19</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+        </article>
+
+        <article>
+            <div class="ContentSpacer"> 
+                <div class="SpacerTitle">Planet data table</div> 
+                <div class="SpacerDate">17 November 2023</div> 
+                <div class="SpacerTime">16:10 - 17:10</div> 
+            </div>
+            
+            <h2><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables/Structuring_planet_data" title="View the resource of mdn">TITLE</a></h2>
+            <section>
+                <table class="PlanetTable">
+                    <colgroup>
+                        <col span="2">
+                        <col style="border: 1.5px solid #1e1e1e; background-color: #f7fff720;">
+                    </colgroup>
+                    <caption>Data about the planets of our solar system (Planetary facts taken from <a href="http://nssdc.gsfc.nasa.gov/planetary/factsheet/">Nasa's Planetary Fact Sheet - Metric</a>).</caption>
+                    <thead>
+                        <tr>
+                            <th colspan="2">&nbsp;</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Mass (10<sup>24</sup>kg)</th>
+                            <th scope="col">Diameter (km)</th>
+                            <th scope="col">Density (kg/m<sup>3</sup>)</th>
+                            <th scope="col">Gravity (m/s<sup>2</sup>)</th>
+                            <th scope="col">Length of day (hours)</th>
+                            <th scope="col">Distance from Sun (10<sup>6</sup>km)</th>
+                            <th scope="col">Mean temperature (°C)</th>
+                            <th scope="col">Number of moons</th>
+                            <th scope="col">Notes</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row" rowspan="4" colspan="2">Terrestrial planets</th>
+                            <td>Mercury</td>
+                            <td>0.330</td>
+                            <td>4,879</td>
+                            <td>5427</td>
+                            <td>3.7</td>
+                            <td>4222.6</td>
+                            <td>57.9</td>
+                            <td>167</td>
+                            <td>0</td>
+                            <td>Closest to the Sun</td>
+                        </tr>
+                        <tr>
+                            <td>Venus</td>
+                            <td>4.87</td>
+                            <td>12,104</td>
+                            <td>5243</td>
+                            <td>8.9</td>
+                            <td>2802.0</td>
+                            <td>108.2</td>
+                            <td>464</td>
+                            <td>0</td>
+                            <td>—</td>
+                        </tr>
+                        <tr>
+                            <td>Earth</td>
+                            <td>5.97</td>
+                            <td>12,756</td>
+                            <td>5514</td>
+                            <td>9.8</td>
+                            <td>24.0</td>
+                            <td>149.6</td>
+                            <td>15</td>
+                            <td>1</td>
+                            <td>Our world</td>
+                        </tr>
+                        <tr>
+                            <td>Mars</td>
+                            <td>0.642</td>
+                            <td>6,792</td>
+                            <td>3933</td>
+                            <td>3.7</td>
+                            <td>24.7</td>
+                            <td>227.9</td>
+                            <td>-65</td>
+                            <td>2</td>
+                            <td>The red planet</td>
+                        </tr>
+                        <tr>
+                            <th scope="rowgroup" rowspan="4">Jovian planets</th>
+                            <th scope="row" rowspan="2">Gas giants</th>
+                            <td>Jupiter</td>
+                            <td>1898</td>
+                            <td>142,984</td>
+                            <td>1326</td>
+                            <td>23.1</td>
+                            <td>9.9</td>
+                            <td>778.6</td>
+                            <td>-110</td>
+                            <td>67</td>
+                            <td>The largest planet</td>
+                        </tr>
+                        <tr>
+                            <td>Saturn</td>
+                            <td>568</td>
+                            <td>120,536</td>
+                            <td>687</td>
+                            <td>9.0</td>
+                            <td>10.7</td>
+                            <td>1433.5</td>
+                            <td>-140</td>
+                            <td>62</td>
+                            <td>—</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" rowspan="2">Ice giants</th>
+                            <td>Uranus</td>
+                            <td>86.8</td>
+                            <td>51,118</td>
+                            <td>1271</td>
+                            <td>8.7</t>
+                            <td>17.2</td>
+                            <td>2872.5</td>
+                            <td>-195</td>
+                            <td>27</td>
+                            <td>—</td>
+                        </tr>
+                        <tr>
+                            <td>Neptune</td>
+                            <td>102</td>
+                            <td>49,528</td>
+                            <td>1638</td>
+                            <td>11.0</td>
+                            <td>16.1</td>
+                            <td>4495.1</td>
+                            <td>-200</td>
+                            <td>14</td>
+                            <td>—</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" colspan="2">Dwarf planets*</th>
+                            <td>Pluto</td>
+                            <td>0.0146</td>
+                            <td>2,370</td>
+                            <td>2095</td>
+                            <td>0.7</td>
+                            <td>153.3</td>
+                            <td>5906.4</td>
+                            <td>-225</td>
+                            <td>5</td>
+                            <td>Declassified as a planet in 2006, but this <a class="TableLink" href="http://www.usatoday.com/story/tech/2014/10/02/pluto-planet-solar-system/16578959/">remains controversial</a>.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </article>
+        
+        <!-- Preset of article -->
+        <article style="display: none;">
+            <div class="ContentSpacer"> 
+                <div class="SpacerTitle">TITLE</div> 
+                <div class="SpacerDate">DATE</div> 
+                <div class="SpacerTime">TIME</div> 
+            </div>
+            
+            <h2><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/TITLE" title="View the resource of mdn">TITLE</a></h2>
+            <section>
+
+            </section>
+        </article>
     </main>
   
-    <footer>
+    <footer class="MainFooter">
         <div class="MainProjects">
             <h2 class="FooterTitle">See my main projects</h2>
             <div class="MainProjectsLinks">
@@ -471,4 +1237,5 @@
         <span class="Copyrights">All rights reserved &copy; Irimia David</span>
     </footer>
 </body>
+
 </html>

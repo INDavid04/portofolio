@@ -55,6 +55,23 @@ section, h1, h2 {
   }
 }
 
+table {
+  border-collapse: collapse;
+}
+
+td, th {
+  border: 1px solid #f7fff7;
+}
+
+th {
+  background-color: rgba(247, 255, 247, 0.1254901961);
+}
+
+.tag {
+  font-family: monospace;
+  text-align: center;
+}
+
 .MobilePhoto {
   margin: 0;
 }
@@ -90,6 +107,33 @@ a:hover {
   }
 }
 
+.FlexBox {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.FlexBox img {
+  width: 100%;
+}
+@media (min-width: 960px) {
+  .FlexBox img {
+    max-width: 50%;
+  }
+}
+
+.TableLink {
+  line-height: normal;
+  border: none;
+  text-decoration: underline;
+}
+
+.TableLink:hover {
+  text-decoration: none;
+}
+
 .ContentSpacer {
   background: linear-gradient(to right, rgba(209, 209, 209, 0.0666666667), rgba(139, 0, 0, 0.3137254902));
   color: darkcyan;
@@ -109,19 +153,26 @@ a:hover {
 .SpacerDate {
   order: -1;
 }
-@media (min-width: 500px) and (max-width: 1000px) {
+@media (min-width: 500px) {
   .SpacerDate {
-    width: 10rem;
+    width: 25%;
+    text-align: left;
   }
 }
 
 .SpacerTitle {
   min-width: 16rem;
 }
+@media (min-width: 500px) {
+  .SpacerTitle {
+    width: 50%;
+  }
+}
 
-@media (min-width: 500px) and (max-width: 100px) {
+@media (min-width: 500px) {
   .SpacerTime {
-    width: 9rem;
+    width: 25%;
+    text-align: right;
   }
 }
 
@@ -136,7 +187,7 @@ a:hover {
 /*  timestamp: 17:45 - TODO:                              */
 /*                                                        */
 /**********************************************************/
-header {
+.MainHeader {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -243,7 +294,7 @@ header {
   background-color: #ade053;
 }
 
-footer {
+.MainFooter {
   border-top: 4px solid #3e433d;
   padding: 1rem;
   background-color: #3e433d;
@@ -709,6 +760,23 @@ abbr, time {
 .BirdFooter {
   margin-top: 1rem;
   background-color: lightgreen;
+}
+
+table.SpendMoney, .PlanetTable {
+  text-align: center;
+}
+
+table.SpendMoney tbody {
+  font-size: 95%;
+  font-style: italic;
+}
+
+table.SpendMoney tfoot {
+  font-weight: bold;
+}
+
+table.Scope th, table.Headers th {
+  font-size: 0.8rem;
 }
 
 /**********************************************************/
