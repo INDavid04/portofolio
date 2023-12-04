@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Dr. Eleanor Gaye">
     <link rel="stylesheet" href="../assets/css/styles.css">
-    <title>Mozzila Course | Practice link</title>
+    <title>INDavid04 | Mozilla - Embedded</title>
 </head>
 
 <body>
@@ -30,14 +31,14 @@
     <nav>
         <ul>
             <li><a href="./" title="Web page where INDavid04 should show what he learned from developer.mozilla.org">Return to Mozzila Course Learning Projects</a></li>
-            <li>Practice links page</li>
+            <li><a href="./practice-link.html" title="Web page where should be listed 5 sites initially">Practice links page</a></li>
             <li><a href="./pictures.html" title="Web page where INDavid04 should share some images">Pictures</a></li>
             <li><a href="./projects.html" title="Web page where INDavid04 should share what he work">Projects</a></li>
             <li><a href="./social.html" title="Web page where INDavid04 should share what he did">Social</a></li>
             <li><a href="./letter.html" title="Web page where INDavid04 should send a letter">Letter</a></li>
             <li><a href="./whales.html" title="Web page where INDavid04 should write more than h1 and p">Whales</a></li>
             <li><a href="./birdwatching.html" title="Web page where INDavid04 should structuring the HTML semantically">Bird watching</a></li>
-            <li><a href="./embedded.html" title="Web page where INDavid04 should expose some media resources">Embedded</a></li>
+            <li>Embedded</li>
             <li><a href="./splash.html" title="Web page where INDavid04 should demonstrate what he learned in HTML mozilla section">Splash</a></li>
             <li><a href="./biography.html" title="Web page where INDavid04 should styling a bio web page">Biography</a></li>
             <li><a href="./school.html" title="Web page where INDavid04 should styling a school presentation web page">School</a></li>
@@ -45,9 +46,27 @@
         </ul>
     </nav>
 
-    <main>
-        <h1>Homepage of practice links</h1>
-        <p>Welcome to my exciting homepage</p>
+    <main class="Embedded">
+        <h1>Embedded content</h1>
+        <article>
+            <div class="ContentSpacer">
+                <div class="SpacerTitle">From object to iframe</div>
+                <div class="SpacerDate">15 November 2023</div>
+                <div class="SpacerTime">19:20 - 19:35</div>
+            </div>
+            <h2><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Video_and_audio_content/Test_your_skills:_Multimedia_and_embedding#task_3" title="View the resource of mdn">Multimedia and embedding - Task 3</a></h2>
+            <section>
+                <object data="./blue/factfile.pdf" type="application/pdf" width="720" height="480">
+                    <p>You can not view the pdf inside of this page. Instead, you can <a href="./factfile.pdf" title="Open a new tab to view it">download the pdf (15KB)</a></p>
+                </object>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2744.6399142017317!2d26.91171247644457!3d46.53502687111167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b571bebc0c84bb%3A0xe86f93bdb51b6c4c!2sDirec%C5%A3ia%20Jude%C5%A3ean%C4%83%20de%20Eviden%C5%A3%C4%83%20a%20Persoanelor%20Bac%C4%83u%20si%20Serviciul%20Public%20Comunitar%20Regim%20Permise%20de%20conducere%20si%20Inmatriculari%20Vehicule%20(SPCRPCIV!5e0!3m2!1sro!2sro!4v1700069241918!5m2!1sro!2sro" width="720" height="480" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    <p>You can not view the pdf inside of this page. Instead, you can <a href="#" title="Open a new tab to view it">visit the web site</a></p>
+                </iframe>
+                <iframe width="720" height="480" src="https://www.youtube.com/embed/JK6BCshUg1E?list=PL2W5NV0Rui2DQFDQUf9SvBtKCirPDL4bQ" title="Day#1 Preparing for Website&#39;s Header" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                    <p>You can not view the pdf inside of this page. Instead, you can <a href="#" title="Open a new tab to view it">visit the web site.</a></p>
+                </iframe>
+            </section>
+        </article>
     </main>
 
     <footer class="MainFooter">

@@ -38,6 +38,11 @@
             <li><a href="./letter.html" title="Web page where INDavid04 should send a letter">Letter</a></li>
             <li><a href="./whales.html" title="Web page where INDavid04 should write more than h1 and p">Whales</a></li>
             <li><a href="./birdwatching.html" title="Web page where INDavid04 should structuring the HTML semantically">Bird watching</a></li>
+            <li><a href="./embedded.html" title="Web page where INDavid04 should expose some media resources">Embedded</a></li>
+            <li><a href="./splash.html" title="Web page where INDavid04 should demonstrate what he learned in HTML mozilla section">Splash</a></li>
+            <li><a href="./biography.html" title="Web page where INDavid04 should styling a bio web page">Biography</a></li>
+            <li><a href="./school.html" title="Web page where INDavid04 should styling a school presentation web page">School</a></li>
+            <li><a href="./layout.html" title="Web page where INDavid04 should make a layout responsive">Layout</a></li>
         </ul>
     </nav>
 
@@ -232,7 +237,7 @@
                 <div class="SpacerTime">18:40 - 19:15</div> 
             </div>
             <h2><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Test_your_skills:_Links#task_1" title="Visit developer.mozilla.org">Task - Whales Link</a></h2>
-            <section>
+            <section class="HyperlinksTask1">
                 <h3>Information on Whales</h3>
                 <p>For more information on our conservation activities and which Whales we study,
                 see our <a href="./whales.html" title="This web page contain info about Blue Whales and Sperm Whales" target="_blank" rel="noreferrer">Whales page</a>.</p>
@@ -505,18 +510,6 @@
                     <track kind="subtitles" src="../assets/media/subtitles-en.vtt" srclang="en" label="English" default>
                     <p>Your browser does not support this video format. Here is the <a href="../assets/media/">Link to the video</a>!</p> <!-- Fallback content -->
                 </video>
-            </section>
-            <section>
-                <h3>19:20 - 19:35</h3>
-                <object data="./factfile.pdf" type="application/pdf" width="720" height="480">
-                    <p>You can not view the pdf inside of this page. Instead, you can <a href="./factfile.pdf" title="Open a new tab to view it">download the pdf (15KB)</a></p>
-                </object>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2744.6399142017317!2d26.91171247644457!3d46.53502687111167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b571bebc0c84bb%3A0xe86f93bdb51b6c4c!2sDirec%C5%A3ia%20Jude%C5%A3ean%C4%83%20de%20Eviden%C5%A3%C4%83%20a%20Persoanelor%20Bac%C4%83u%20si%20Serviciul%20Public%20Comunitar%20Regim%20Permise%20de%20conducere%20si%20Inmatriculari%20Vehicule%20(SPCRPCIV!5e0!3m2!1sro!2sro!4v1700069241918!5m2!1sro!2sro" width="720" height="480" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" sandbox="">
-                    <p>You can not view the pdf inside of this page. Instead, you can <a href="#" title="Open a new tab to view it">visit the web site</a></p>
-                </iframe>
-                <iframe width="720" height="480" src="https://www.youtube.com/embed/JK6BCshUg1E?list=PL2W5NV0Rui2DQFDQUf9SvBtKCirPDL4bQ" title="Day#1 Preparing for Website&#39;s Header" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen sandbox="">
-                    <p>You can not view the pdf inside of this page. Instead, you can <a href="#" title="Open a new tab to view it">visit the web site.</a></p>
-                </iframe>
             </section>
         </article> <!-- Video and audio content -->
 
@@ -1173,6 +1166,654 @@
             </section>
         </article>
         
+        <article>
+            <div class="ContentSpacer"> 
+                <div class="SpacerTitle">CSS - Selectors</div> 
+                <div class="SpacerDate">21 November 2023</div> 
+                <div class="SpacerTime">15:00 - 16:30</div> 
+            </div>
+            
+            <h2><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Selectors_Tasks#task_1" title="View the resource of mdn">Via tag name</a></h2>
+            <section class="TagName">
+                <h2>This is a heading</h2>
+                <p>Veggies es <span>bonus vobis</span>, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean garlic.</p>
+                <h3>A level 2 heading</h3>
+                <p>Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
+            </section>
+
+            <h2><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Selectors_Tasks#task_2" title="View the resource of mdn">Via id and class</a></h2>
+            <section class="IdClass">
+                <h2>This is a heading</h2>
+                <p>Veggies es <span class="alert">bonus vobis</span>, proinde vos postulo <span class="alert stop">essum magis</span> kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean garlic.</p>
+                <h3 id="special">A level 2 heading</h3>
+                <p>Gumbo beet greens corn soko endive gumbo gourd.</p>
+                <h3>Another level 2 heading</h3>
+                <p><span class="alert go">Parsley shallot</span> courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
+            </section>
+
+            <h2><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Selectors_Tasks#task_3" title="View the resource of mdn">Via pseudo-class and pseudo-element</a></h2>
+            <section class="Pseudo">
+                <p>Veggies es <a href="http://example.com">bonus vobis</a>, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean garlic.</p>
+                <p>Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>Fruits</th>
+                            <th>Vegetables</th>
+                        </tr>
+                        <tr>
+                            <td class="Striped">Apple</td>
+                            <td class="Striped">Potato</td>
+                        </tr>
+                        <tr>
+                            <td>Orange</td>
+                            <td>Carrot</td>
+                        </tr>
+                        <tr>
+                            <td class="Striped">Tomato</td>
+                            <td class="Striped">Parsnip</td>
+                        </tr>
+                        <tr>
+                            <td>Kiwi</td>
+                            <td>Onion</td>
+                        </tr>
+                        <tr>
+                            <td class="Striped">Banana</td>
+                            <td class="Striped">Beet</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <h2><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Selectors_Tasks#task_4" title="View the resource of mdn">Via connectors</a></h2>
+            <section class="Connector">
+                <h2>This is a heading</h2>
+                <p>This paragraph comes after the heading.</p>
+                <p>This is the second paragraph.</p>
+                <h2>Another heading</h2>
+                <p>This paragraph comes after the heading.</p>
+                <ul class="list">
+                    <li>One</li>
+                    <li>Two
+                    <ul>
+                        <li>2.1</li>
+                        <li>2.2</li>
+                    </ul>
+                    </li>
+                    <li>Three</li>
+                </ul>
+            </section>
+
+            <h2><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Selectors_Tasks#task_5" title="View the resource of mdn">Via attribute</a></h2>
+            <section class="Attribute">
+                <ul>
+                    <li><a href="https://example.com">Link 1</a></li>
+                    <li><a href="http://example.com" title="Visit example.com">Link 2</a></li>
+                    <li><a href="/contact">Link 3</a></li>
+                    <li><a href="../contact/index.html">Link 4</a></li>
+                  </ul>
+            </section>
+        </article>
+
+        <article>
+            <div class="ContentSpacer"> 
+                <div class="SpacerTitle">Box Model</div> 
+                <div class="SpacerDate">22 November 2023</div> 
+                <div class="SpacerTime">08:45 - 09:15</div> 
+            </div>
+            
+            <h2><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Box_Model_Tasks#task_1" title="View the resource of mdn">Border box</a></h2>
+            <section class="BorderBox">
+                <div class="box">I use the standard box model.</div>
+                <div class="box alternate">I use the alternate box model.</div>
+                <div class="box modified">I use the alternate box model.</div>
+            </section>
+
+            <h2><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Box_Model_Tasks#task_2" title="View the resource of mdn">Standard box model</a></h2>
+            <section class="StandardModel">
+                <div class="box">I use the standard box model.</div>
+            </section>
+
+            <h2><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Box_Model_Tasks#task_3" title="View the resource of mdn">Inline block</a></h2>
+            <section class="InlineBlock">
+                <h3>Before</h3>
+                <div class="box">
+                    <p>Veggies es bonus vobis, <span>proinde vos postulo</span> essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean garlic.</p>
+                    <p>Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
+                </div>
+                <h3>After using display: inline-block</h3>
+                <div class="box">
+                    <p>Veggies es bonus vobis, <span class="fix">proinde vos postulo</span> essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean garlic.</p>
+                    <p>Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
+                </div>
+            </section>
+        </article>
+
+        <article>
+            <div class="ContentSpacer"> 
+                <div class="SpacerTitle">Backgrounds and borders</div> 
+                <div class="SpacerDate">22 November 2023</div> 
+                <div class="SpacerTime">10:10 - 10:40</div> 
+            </div>
+            
+            <h2><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Test_your_skills_backgrounds_and_borders#task_1" title="View the resource of mdn">Simple Background with border</a></h2>
+            <section class="SimpleBB">
+                <div class="box">
+                    <h2>Backgrounds & Borders</h2>
+                </div>
+            </section>
+
+            <h2><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Test_your_skills_backgrounds_and_borders#task_2" title="View the resource of mdn">Advanced Background with border</a></h2>
+            <section class="AdvancedBB">
+                <div class="box">
+                    <h2>Backgrounds & Borders</h2>
+                </div>
+            </section>
+        </article>
+
+        <article>
+            <div class="ContentSpacer"> 
+                <div class="SpacerTitle">Handling different text directions</div> 
+                <div class="SpacerDate">22 NOvember 2023</div> 
+                <div class="SpacerTime">13:10 - 13:45</div> 
+            </div>
+            
+            <h2><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Writing_Modes_Tasks#task_1" title="View the resource of mdn">Writing mode</a></h2>
+            <section class="WritingMode">
+                <div class="box">Turn me on my side.</div>
+            </section>
+
+            <h2><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Writing_Modes_Tasks#task_2" title="View the resource of mdn">Logic properties (inline-size, block-size)</a></h2>
+            <section class="LogicProp">
+                <div class="box">Horizontal.</div>
+                <div class="box vertical">Vertical.</div>
+            </section>
+
+            <h2><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Writing_Modes_Tasks#task_3" title="View the resource of mdn">Logic values (inline-start-end, block-start-end)</a></h2>
+            <section class="LogicVal">
+                <div class="box">Horizontal.</div>
+                <div class="box vertical">Vertical.</div>
+            </section>
+        </article>
+
+        <article>
+            <div class="ContentSpacer"> 
+                <div class="SpacerTitle">Overflowing content</div> 
+                <div class="SpacerDate">22 November 2023</div> 
+                <div class="SpacerTime">15:25 - 15:40</div> 
+            </div>
+            
+            <h2><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Overflow_Tasks#task_1" title="View the resource of mdn">Overflowing text</a></h2>
+            <section class="OverflowText">
+                <div class="box">
+                    <p>Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean garlic.</p>
+                    <p>Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
+                  </div>
+            </section>
+
+            <h2><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Overflow_Tasks#task_2" title="View the resource of mdn">Overflowing image</a></h2>
+            <section class="OverflowImage">
+                <div class="box">
+                    <img src="./img/blueberries.webp" alt="Blueberries, a lot of blueberries filling the viewport">
+                  </div>
+            </section>
+        </article>
+
+        <article>
+            <div class="ContentSpacer"> 
+                <div class="SpacerTitle">CSS values and units</div> 
+                <div class="SpacerDate">22 November 2023</div> 
+                <div class="SpacerTime">15:50 - 18:00</div> 
+            </div>
+            
+            <h2><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units" title="View the resource of mdn">From lesson</a></h2>
+            <section class="ValuesUnits">
+                <div class="Unit Centimeter" title="centimeters">1cm</div>
+                <div class="Unit Inch" title="inchs">1in</div>
+                <div class="Unit Picas" title="picas">1pc</div>
+                <div class="Unit Points" title="points">1pt</div>
+                <p title="Here I used lh value">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit consequatur, veritatis asperiores placeat fugit.</p>
+            </section>
+
+            <h2><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_tasks#task_1" title="View the resource of mdn">Color values</a></h2>
+            <section class="ColorValue">
+                <ul>
+                    <li class="hex">hex color — #86DEFA</li>
+                    <li class="rgb">RGB color — rgb(133, 223, 250)</li>
+                    <li class="hsl">HSL color — hsl(194, 92%, 75%)</li>
+                    <li class="transparency">Alpha value 0.5 — rgba(133, 223, 250, 0.5)</li>
+                  </ul>
+            </section>
+
+            <h2><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_tasks#task_2" title="View the resource of mdn">Font-size value</a></h2>
+            <section class="TextValue">
+                <h2>Level 2 heading</h2>
+                <p>Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean garlic.</p>
+                <h3>Level 3 heading</h3>
+                <p>Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
+            </section>
+
+            <h2><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_tasks#task_3" title="View the resource of mdn">Moving a background image</a></h2>
+            <section class="PositionValue">
+                <div>&nbsp;</div>
+            </section>
+        </article>
+
+        <article>
+            <div class="ContentSpacer"> 
+                <div class="SpacerTitle">Sizing items in CSS</div> 
+                <div class="SpacerDate">22 November 2023</div> 
+                <div class="SpacerTime">18:05 - 19:00</div> 
+            </div>
+            
+            <h2><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Sizing_tasks#task_1" title="View the resource of mdn">Min-height property</a></h2>
+            <section class="MinHeight">
+                <div class="box box1">
+                    <p>Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean garlic. Gumbo beet greens corn soko endive gumbo gourd. </p>
+                </div>
+                <div class="box box2">
+                    <p>Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean garlic. Gumbo beet greens corn soko endive gumbo gourd. </p>
+                </div>
+            </section>
+
+            <h2><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Sizing_tasks#task_2" title="View the resource of mdn">Percentage width</a></h2>
+            <section class="PercentageWidth">
+                <div>
+                    <div class="inner">Make me 70% of my parent's width.</div>
+                </div>
+            </section>
+
+            <h2><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Sizing_tasks#task_3" title="View the resource of mdn">Percentage min-width</a></h2>
+            <section class="PercentageMinWidth">
+                <div class="box">
+                    <img src="https://mdn.github.io/css-examples/learn/tasks/values/star.png" width="132" height="126" alt="star">
+                </div>
+                <div class="box">
+                    <img src="https://mdn.github.io/css-examples/learn/tasks/backgrounds/balloons.jpg" width="640" height="427" alt="balloons">
+                </div>
+            </section>
+        </article>
+
+        <article>
+            <div class="ContentSpacer"> 
+                <div class="SpacerTitle">Images and form elements</div> 
+                <div class="SpacerDate">23 November 2023</div> 
+                <div class="SpacerTime">08:20 - 08:40</div> 
+            </div>
+            
+            <h2><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Images_tasks#task_1" title="View the resource of mdn">Fit image into container perfectly</a></h2>
+            <section class="PerfectImage">
+                <div class="box">
+                    <img src="https://mdn.github.io/css-examples/learn/tasks/backgrounds/balloons.jpg" width="640" height="427" alt="balloons">
+                </div>
+            </section>
+
+            <h2><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Images_tasks#task_2" title="View the resource of mdn">Keywords Form</a></h2>
+            <section class="KeywordsForm">
+                <form method="post" action="" class="myform">
+                    <div>
+                      <label for="fldSearch">Keywords</label>
+                      <input type="search" id="fldSearch" name="keywords">
+                      <input type="submit" name="btnSubmit" value="Search">
+                    </div>
+                  </form>
+            </section>
+        </article>
+
+        <article>
+            <div class="ContentSpacer"> 
+                <div class="SpacerTitle">Styling Tables</div> 
+                <div class="SpacerDate">23 November 2023</div> 
+                <div class="SpacerTime">09:00 - 09:30</div> 
+            </div>
+            
+            <h2><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Tables_tasks" title="View the resource of mdn">Table with alternate colours</a></h2>
+            <section class="StylingTables">
+                <table>
+                    <caption>A summary of the UK's most famous punk bands</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Band</th>
+                            <th scope="col">Year formed</th>
+                            <th scope="col">No. of Albums</th>
+                            <th scope="col">Most famous song</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Buzzcocks</th>
+                            <td>1976</td>
+                            <td>9</td>
+                            <td>Ever fallen in love (with someone you shouldn't've)</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">The Clash</th>
+                            <td>1976</td>
+                            <td>6</td>
+                            <td>London Calling</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">The Damned</th>
+                            <td>1976</td>
+                            <td>10</td>
+                            <td>Smash it up</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Sex Pistols</th>
+                            <td>1975</td>
+                            <td>1</td>
+                            <td>Anarchy in the UK</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Sham 69</th>
+                            <td>1976</td>
+                            <td>13</td>
+                            <td>If the kids are united</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Siouxsie and the Banshees</th>
+                            <td>1976</td>
+                            <td>11</td>
+                            <td>Hong Kong Garden</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Stiff Little Fingers</th>
+                            <td>1977</td>
+                            <td>10</td>
+                            <td>Suspect Device</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">The Stranglers</th>
+                            <td>1974</td>
+                            <td>17</td>
+                            <td>No More Heroes</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th scope="row" colspan="2">Total albums</th>
+                            <td colspan="2">77</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
+        </article>
+
+        <article>
+            <div class="ContentSpacer"> 
+                <div class="SpacerTitle">Fundamental CSS comprehension</div> 
+                <div class="SpacerDate">23 November 2023</div> 
+                <div class="SpacerTime">10:30 - 12:00</div> 
+            </div>
+            
+            <h2><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Fundamental_CSS_comprehension" title="View the resource of mdn">Social card</a></h2>
+            <section class="SocialCard">
+                <header>
+                    <h2>Chris Mills</h2>
+                </header>
+                <article>
+                    <img src="https://mdn.github.io/learning-area/css/introduction-to-css/fundamental-css-comprehension/chris.jpg" alt="A picture of Chris - a man with glasses, a beard, and a silly wooly hat">
+                    <p>50 My Street<br>
+                        The Town<br>
+                        Gray Peach<br>
+                        UK<br>
+                        ZO50 1MU<br>
+                        <strong>Tel</strong>: 01234 567 890<br>
+                        <strong>Mail</strong>: chris@nothere.com
+                    </p>
+                </article>
+                <footer>
+                    <p>Editing, writing, and web development services</p>
+                </footer>
+            </section>
+        </article>        
+        
+        <article>
+            <div class="ContentSpacer"> 
+                <div class="SpacerTitle">Creating fancy letterheaded paper</div> 
+                <div class="SpacerDate">23 November 2023</div> 
+                <div class="SpacerTime">12:00 - 13:00</div> 
+            </div>
+            
+            <h2><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Creating_fancy_letterheaded_paper" title="View the resource of mdn">Letterheaded paper</a></h2>
+            <section class="LetterHeaded">
+                <h2>Awesome<br>Company</h2>
+                <address>
+                    <p>The Awesome Company</p>
+                    <p>102-112 Frail Bend Bridge<br>
+                    The Dwindlings<br>
+                    Little Hornet<br>
+                    HX3 9ZQ<br>
+                    UK</p>
+                </address>
+            </section>
+        </article>  
+        
+        <article>
+            <div class="ContentSpacer"> 
+                <div class="SpacerTitle">A cool-loking box</div> 
+                <div class="SpacerDate">23 November 2023</div> 
+                <div class="SpacerTime">13:00 - 13:45</div> 
+            </div>
+            
+            <h2><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/A_cool_looking_box" title="View the resource of mdn">Cool box</a></h2>
+            <section class="Coolbox">
+                <div>This is a cool box</div>
+            </section>
+        </article>  
+
+        <article class="FlexboxLesson">
+            <div class="ContentSpacer"> 
+                <div class="SpacerTitle">Flexbox</div> 
+                <div class="SpacerDate">27 November 2023</div> 
+                <div class="SpacerTime">12:00 - 13:00</div> 
+            </div>
+            
+            <h2><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox_skills#task_1" title="View the resource of mdn">Spaced between navigation</a></h2>
+            <section class="SpacedNav">
+                <nav>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/about">About Us</a></li>
+                        <li><a href="/products">Our Products</a></li>
+                        <li><a href="/contact">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </section>
+
+            <h2><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox_skills#task_2" title="View the resource of mdn">Equal box</a></h2>
+            <section class="EqualBox">
+                <ul>
+                    <li>I am small</li>
+                    <li>I have more content than the very small item.</li>
+                    <li>I have lots of content. So much content that I don't know where it is all going to go. I'm glad that CSS is pretty good at dealing with situations where we end up with more words than expected!</li>
+                  </ul>
+            </section>
+
+            <h2><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox_skills#task_3" title="View the resource of mdn">Center box</a></h2>
+            <section class="CenterBox">
+                <div class="parent">
+                    <div class="child">Center me.</div>
+                </div>
+            </section>
+
+            <h2><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox_skills#task_4" title="View the resource of mdn">Fill wrapped box</a></h2>
+            <section class="WrappedBox">
+                <ul>
+                    <li>Turnip</li>
+                    <li>greens</li>
+                    <li>yarrow</li>
+                    <li>ricebean</li>
+                    <li>rutabaga</li>
+                    <li>endive</li>
+                    <li>cauliflower</li>
+                    <li>sea lettuce</li>
+                    <li>kohlrabi</li>
+                    <li>amaranth</li>
+                  </ul>
+            </section>
+        </article>
+
+        <article class="GridsLesson">
+            <div class="ContentSpacer"> 
+                <div class="SpacerTitle">Grids</div> 
+                <div class="SpacerDate">27 November 2023</div> 
+                <div class="SpacerTime">18:00 - 19:20</div> 
+            </div>
+            
+            <h2><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Grid_skills#task_1" title="View the resource of mdn">Simple grid display</a></h2>
+            <section class="SimpleGrid">
+                <div>One</div>
+                <div>Two</div>
+                <div>Three</div>
+                <div>Four</div>
+            </section>
+
+            <h2><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Grid_skills#task_2" title="View the resource of mdn">Grid area</a></h2>
+            <section class="GridArea">
+                <div>One</div>
+                <div>Two</div>
+            </section>
+
+            <h2><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Grid_skills#task_3" title="View the resource of mdn">Grid template areas</a></h2>
+            <section class="TemplateArea">
+                <div>One</div>
+                <div>Two</div>
+                <div>Three</div>
+                <div>Four</div>
+            </section>
+
+            <h2><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Grid_skills#task_4" title="View the resource of mdn">Grid & Flex</a></h2>
+            <section class="GridFlex">
+                <div class="card">
+                    <img src="./img/blueberries.webp" alt="a single red balloon">
+                    <ul class="tags">
+                        <li>balloon</li>
+                        <li>red</li>
+                        <li>sky</li>
+                        <li>blue</li>
+                        <li>Hot air balloon</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <img src="./img/dove.png" alt="balloons over some houses">
+                    <ul class="tags">
+                        <li>balloons</li>
+                        <li>houses</li>
+                        <li>train</li>
+                        <li>harborside</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <img src="./img/larch.webp" alt="close-up of balloons inflating">
+                    <ul class="tags">
+                        <li>balloons</li>
+                        <li>inflating</li>
+                        <li>green</li>
+                        <li>blue</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <img src="./img/redpanda1200.jpg" alt="a balloon in the sun">
+                    <ul class="tags">
+                        <li>balloon</li>
+                        <li>sun</li>
+                        <li>sky</li>
+                        <li>summer</li>
+                        <li>bright</li>
+                    </ul>
+                </div>
+            </section>
+        </article>        
+
+        <article class="FloatsLesson">
+            <div class="ContentSpacer"> 
+                <div class="SpacerTitle">Floats</div> 
+                <div class="SpacerDate">28 November 2023</div> 
+                <div class="SpacerTime">08:20 - 08:45</div> 
+            </div>
+            
+            <h2><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Floats_skills#task_1" title="View the resource of mdn">Floating left and right</a></h2>
+            <section class="FloatLR">
+                <div class="float float1">One</div>
+                <div class="float float2">Two</div>
+                <p>The two boxes should float to either side of this text.</p>
+            </section>
+
+            <h2><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Floats_skills#task_2" title="View the resource of mdn">Spacing paragraph with clear</a></h2>
+            <section class="ClearLeft">
+                <div class="float">Float</div>
+                <p>This sentence appears next to the float.</p>
+                <p class="below">Cause this sentence to appear below the float.</p>
+            </section>
+
+            <h2><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Floats_skills#task_3" title="View the resource of mdn">Display flow-root</a></h2>
+            <section class="FlowRoot">
+                <div class="float">Float</div>
+                <p>This sentence appears next to the float.</p>
+            </section>
+        </article>
+
+        <article>
+            <div class="ContentSpacer"> 
+                <div class="SpacerTitle">Positioning</div> 
+                <div class="SpacerDate">28 November 2023</div> 
+                <div class="SpacerTime">09:15 - 09:45</div> 
+            </div>
+            
+            <h2><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Position_skills#task_1" title="View the resource of mdn">Position absolute</a></h2>
+            <section class="PositionAbsolute">
+                <p>Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean garlic.</p>
+                <div class="target">Target</div>
+                <p>Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
+            </section>
+
+            <h2><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Position_skills#task_1" title="View the resource of mdn">Fixed sidebar</a></h2>
+            <section class="FixedSidebar">
+                <div class="sidebar">
+                    <p>This is the sidebar. It should remain in position as the content scrolls.</p>
+                </div>
+                <div class="content">
+                    <p>Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean garlic.</p>
+                    <p>Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
+                    <p>Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth water spinach avocado daikon napa cabbage asparagus winter purslane kale. Celery potato scallion desert raisin horseradish spinach carrot soko. Lotus root water spinach fennel kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion chickpea gram corn pea. Brussels sprout coriander water chestnut gourd swiss chard wakame kohlrabi beetroot carrot watercress. Corn amaranth salsify bunya nuts nori azuki bean chickweed potato bell pepper artichoke.</p>
+                </div>
+            </section>
+        </article>
+
+        <article class="MultipleColumn">
+            <div class="ContentSpacer"> 
+                <div class="SpacerTitle">Multiple-column layout</div> 
+                <div class="SpacerDate">28 November 2023</div> 
+                <div class="SpacerTime">10:00 - 10:40</div> 
+            </div>
+            
+            <h2><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Multicol_skills#task1" title="View the resource of mdn">Three columns</a></h2>
+            <section class="ThreeColumns">
+                <p>Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean garlic.</p>
+                <p>Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
+                <p>Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth water spinach avocado daikon napa cabbage asparagus winter purslane kale. Celery potato scallion desert raisin horseradish spinach carrot soko. Lotus root water spinach fennel kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion chickpea gram corn pea. </p>
+            </section>
+
+            <h2><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Multicol_skills#task2" title="View the resource of mdn">Three columns with border</a></h2>
+            <section class="BorderColumns">
+                <p>Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean garlic.</p>
+                <p>Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
+                <p>Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth water spinach avocado daikon napa cabbage asparagus winter purslane kale. Celery potato scallion desert raisin horseradish spinach carrot soko. Lotus root water spinach fennel kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion chickpea gram corn pea. </p>
+            </section>
+
+            <h2><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Multicol_skills#task3" title="View the resource of mdn">Header span three columns</a></h2>
+            <section class="SpanColumns">
+                <p>Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean garlic.</p>
+                <p>Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
+                <div class="ColumnBox">
+                    <h2>I am a level 2 heading</h2>
+                    <div class="subhead">Lotus root water spinach fennel</div>
+                </div>
+                <p>Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth water spinach avocado daikon napa cabbage asparagus winter purslane kale. Celery potato scallion desert raisin horseradish spinach carrot soko. Lotus root water spinach fennel kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion chickpea gram corn pea. </p>
+            </section>
+        </article>        
+
         <!-- Preset of article -->
         <article style="display: none;">
             <div class="ContentSpacer"> 
@@ -1181,7 +1822,7 @@
                 <div class="SpacerTime">TIME</div> 
             </div>
             
-            <h2><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/TITLE" title="View the resource of mdn">TITLE</a></h2>
+            <h2><a href="" title="View the resource of mdn">TITLE</a></h2>
             <section>
 
             </section>
