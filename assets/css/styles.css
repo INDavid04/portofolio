@@ -6,13 +6,13 @@
 /**********************************************************/
 @font-face {
   font-family: "Domine";
-  src: url(./font/Domine-Regular.woff2);
+  src: url(../font/Domine-Regular.woff2);
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Quicksand";
-  src: url(./font/Quicksand-Regular.woff2);
+  src: url(../font/Quicksand-Regular.woff2);
   font-weight: 400;
   font-style: normal;
 }
@@ -34,6 +34,11 @@ body {
   background-color: #0c0523;
   color: #f7fff7;
   font-size: 16px;
+  font-family: "Domine", "Times New Roman", Times, serif;
+}
+
+h1, h2, h3 {
+  font-family: "Quicksand", Arial, Helvetica, sans-serif;
 }
 
 h1, article h2 {
@@ -119,14 +124,14 @@ th {
 }
 
 a, .HomeMenuLink, .FooterLink {
-  color: #ade053;
+  color: #bff523;
   text-decoration: none;
   transition: all 0.1s;
 }
 
 a:hover {
-  color: #788f74;
-  border-bottom: 2px dashed #788f74;
+  color: #797339;
+  border-bottom: 2px dashed #797339;
 }
 
 .DesktopOnly {
@@ -233,16 +238,25 @@ a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 2rem;
-  padding: 0.75rem;
+  padding: 0 1rem;
+  min-height: 10vh;
   background-color: #3e433d;
   font-family: "Quicksand", sans-serif;
   z-index: 2;
 }
 
+.LogoContainer {
+  cursor: pointer;
+}
+
 .LogoSite {
   font-size: 1.5rem;
   letter-spacing: 0.06em;
+}
+
+.MenuContainer {
+  margin: 0;
+  font-size: 1.25rem;
 }
 
 .HamburgerMenu {
@@ -293,17 +307,23 @@ a:hover {
   transform: translate(-8px, -2px);
 }
 
-.HamburgerMenu:has(input:checked) + .Menu {
-  display: block;
-  transform: translate3d(-64%, 5%, 0);
-  background-color: #788f74;
-  transition: 0.9s;
+@media (max-width: 959px) {
+  .HamburgerMenu:has(input:checked) + .Menu {
+    display: block;
+    transform: translate3d(-78%, 8.4%, 0);
+    width: 18.7rem;
+    background-color: #3e433d;
+    box-shadow: -4px 4px 7px #bff523;
+  }
+}
+
+.HamburgerMenu:has(input:checked) + .Menu span {
+  padding: 1rem;
 }
 
 .Menu {
   display: none;
   position: absolute;
-  transform: translate3d(-200%, 200%, 0);
 }
 @media (min-width: 960px) {
   .Menu {
@@ -314,38 +334,57 @@ a:hover {
 }
 
 .MenuList {
+  margin: 0;
   padding-left: 0;
 }
 @media (min-width: 960px) {
   .MenuList {
     display: flex;
     list-style: none;
-    gap: 1.5rem;
-    font-size: 1.25rem;
   }
 }
 
 .MenuListItem {
-  list-style: none;
+  height: 10vh;
   margin-left: 0;
-  padding: 1rem;
-  font-size: 1.5rem;
+  list-style: none;
+  transition: 0.5s;
 }
 
-.MenuListItem:hover, .MenuListItem:focus {
-  background-color: #ade053;
+.MenuListItem:hover {
+  outline: 4px ridge #bff523;
+  outline-offset: -4px;
+}
+
+.MenuListItem a {
+  display: flex;
+  align-items: center;
+  border: none;
+  height: 100%;
+  transition: 0.7s;
+}
+
+@media (min-width: 960px) {
+  .MenuListItem span {
+    padding: 0 2rem;
+  }
+}
+
+.MenuListItem a:focus, .MenuListItem a:hover {
+  background-color: #0c0523;
+  color: #bff523;
 }
 
 .LogoContainer {
   border: none;
   text-decoration: none;
   color: #f7fff7;
-  text-shadow: 1px 1px 10px #788f74;
+  text-shadow: 1px 1px 10px #797339;
 }
 
 .LogoContainer:focus, .LogoContainer:hover {
   border: none;
-  color: #ade053;
+  color: #bff523;
 }
 
 .MainFooter {
@@ -377,7 +416,7 @@ a:hover {
   margin: 0.2rem auto;
   border: 2px solid #f7fff7;
   padding-left: 0.5rem;
-  background-color: #788f74;
+  background-color: #797339;
   color: #f7fff7;
 }
 
@@ -385,8 +424,8 @@ a:hover {
   margin-left: 5%;
   border: none;
   padding: 0.4rem 1rem;
-  background-color: #ade053;
-  color: #788f74;
+  background-color: #bff523;
+  color: #797339;
   cursor: pointer;
 }
 
@@ -409,7 +448,7 @@ a:hover {
 .About {
   width: -moz-fit-content;
   width: fit-content;
-  margin: 0 auto 2rem;
+  margin: 2rem auto;
 }
 @media (min-width: 540px) {
   .About {
@@ -419,6 +458,7 @@ a:hover {
 @media (min-width: 820px) {
   .About {
     display: flex;
+    align-items: center;
     gap: 2rem;
     width: 92%;
   }
@@ -432,10 +472,14 @@ a:hover {
 }
 
 .Title {
+  margin: 0;
   width: -moz-fit-content;
   width: fit-content;
 }
 
+.Description {
+  line-height: 1.5;
+}
 @media (min-width: 480px) {
   .Description {
     max-width: 24rem;
@@ -448,7 +492,8 @@ a:hover {
 }
 
 .About img {
-  width: 100%;
+  width: 10rem;
+  height: auto;
   padding: 0;
 }
 @media (min-width: 480px) {
@@ -460,7 +505,7 @@ a:hover {
 @media (min-width: 820px) {
   .About img {
     width: 10rem;
-    heigth: auto;
+    height: auto;
   }
 }
 
@@ -491,18 +536,18 @@ a:hover {
 
 .Project {
   margin: 0;
-  border: 2px solid #788f74;
+  border: 4px solid #3e433d;
   border-radius: 0 0 1rem 1rem;
   padding: 0.5rem;
-  background-color: #3e433d;
+  background-color: #0c0523;
   color: #f7fff7;
   text-decoration: none;
 }
 
 .Project:hover {
-  background-color: #788f74;
+  background-color: #3e433d;
   color: #f7fff7;
-  border: 2px solid #ade053;
+  border: 4px solid #3e433d;
   transition: all 1s;
 }
 
@@ -523,8 +568,8 @@ a:hover {
 /*                                                        */
 /**********************************************************/
 .BusinessCard {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 90vh;
   background: #adc178;
 }
 
@@ -637,42 +682,139 @@ a:hover {
 /**********************************************************/
 /*                                                        */
 /*  Bootcamp Ania Kubow                                   */
-/*  datestamp: 30 October 2023                            */
-/*  timestamp: 09:57 - TODO                               */
+/*  datestamp: 30 October 2023 | 7 December 2023          */
+/*  timestamp: 09:57 - 12:27   | 08:20 - 12:00            */
 /*                                                        */
 /**********************************************************/
 .BootcampAnia {
   display: flex;
   flex-direction: column;
+  margin: 1rem auto;
+  width: 90vw;
+  background-color: antiquewhite;
+  color: black;
+}
+
+.BootcampAnia nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(12, 5, 35, 0.3137254902);
+}
+
+.BootcampAnia .Logo {
+  border-radius: 2rem;
+  width: 48px;
+  height: 48px;
+  overflow: hidden;
+  transition: 2s;
+}
+
+.BootcampAnia .Logo:focus, .BootcampAnia .Logo:hover {
+  border-radius: 0;
+}
+
+.BootcampAnia .Logo img {
+  position: relative;
+  top: -0.5rem;
+}
+
+.BootcampAnia nav ul {
+  display: flex;
+  gap: 1rem;
   margin: 0;
+  list-style-type: none;
 }
 
-.BootcampAnia header {
-  margin-bottom: 1rem;
-  width: 100%;
-  height: 200px;
-  background-color: green;
-}
-
-.BootcampAnia .AboutMe {
+.BootcampAnia nav a {
   display: flex;
   align-items: center;
+  height: 100%;
+}
+
+.BootcampAnia nav a:focus, .BootcampAnia nav a:hover {
+  background-color: rgba(12, 5, 35, 0.0196078431);
+  border-radius: 1rem;
+}
+
+.BootcampAnia .Hero {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
   margin: 1rem 0;
   border: 7px solid black;
-  border-radius: 10px;
+  padding: 4rem 1rem;
   width: 100%;
-  height: 200px;
+  height: -moz-max-content;
+  height: max-content;
   background-color: rgba(177, 69, 21, 0.8);
   box-sizing: border-box;
 }
 
-.avatar {
-  margin: 0 1rem;
-  border-radius: 33px;
+.BootcampAnia .Hero div {
+  max-width: 20rem;
 }
 
 #name {
   color: lightgreen;
+}
+
+.BootcampAnia button {
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.8rem 2rem;
+  background-color: darkred;
+  background-image: linear-gradient(to top right, rgba(0, 0, 0, 0.1254901961), rgba(0, 0, 0, 0.3137254902) 70%);
+  color: antiquewhite;
+  text-shadow: 1px 1px 1px black;
+  font-size: 1.2rem;
+  box-shadow: inset -2px 2px 3px rgba(247, 255, 247, 0.4392156863), inset 4px -4px 5px rgba(12, 5, 35, 0.3137254902), -2px 2px 3px black;
+  cursor: pointer;
+}
+
+.BootcampAnia button:focus, .BootcampAnia button:hover {
+  background-color: indianred;
+}
+
+.BootcampAnia button:active {
+  background-color: indigo;
+}
+
+.avatar {
+  border-radius: 2rem;
+  width: 90vw;
+  max-width: 18rem;
+}
+
+.BootcampAnia .AboutMe {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 1rem 0;
+  padding: 2rem 0.5rem;
+  background-color: #fefefe;
+}
+
+.BootcampAnia .AboutMe .Image {
+  border-radius: 10rem;
+  width: 15rem;
+  height: 15rem;
+  overflow: hidden;
+}
+
+.BootcampAnia .AboutMe img {
+  position: relative;
+  top: -7rem;
+  left: -1rem;
+  width: 120%;
+}
+
+.SocialMedia {
+  background-color: #fefefe;
+  text-align: center;
 }
 
 .BootcampAnia section {
@@ -681,8 +823,7 @@ a:hover {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 100px;
+  width: 90%;
   background-image: repeating-linear-gradient(45deg, cyan 10%, lightyellow 55%, darkred);
 }
 
@@ -697,8 +838,62 @@ a:hover {
   box-shadow: 5px -5px 8px darkblue;
 }
 
-.BootcampAnia footer {
+.BootcampAnia .Boxes {
+  height: -moz-max-content;
+  height: max-content;
+}
+
+.BootcampAnia .Footer {
   width: 100%;
+  margin: 0;
+  padding-bottom: 1rem;
+}
+
+.BootcampAnia a {
+  color: indigo;
+  font-family: "Quicksand", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  border: none;
+}
+
+.BootcampAnia a:focus, .BootcampAnia a:hover {
+  text-decoration: underline;
+  color: indianred;
+}
+
+/**********************************************************/
+/*                                                        */
+/*  Washington.edu                                        */
+/*  datestamp: 5 December 2023                            */
+/*  timestamp: 07:20 - 07:45                              */
+/*                                                        */
+/**********************************************************/
+.WashingtonBoxModel caption {
+  margin-bottom: 0.5rem;
+  text-shadow: 0 4px 3px #3e433d;
+  font-family: "Quicksand", Arial, Helvetica, sans-serif;
+}
+
+.WashingtonBoxModel table {
+  border: 5px ridge #f7fff7;
+}
+
+.WashingtonBoxModel tr:nth-child(2n+1) {
+  background-color: #181321;
+}
+
+.WashingtonBoxModel tr:nth-child(2n) {
+  background-color: #34313C;
+}
+
+.WashingtonBoxModel th, .WashingtonBoxModel td {
+  padding: 0.5rem;
+  border: none;
+  border-right: 1px solid #f7fff7;
+}
+
+.WashingtonBoxModel th {
+  color: #797339;
 }
 
 /**********************************************************/
@@ -1007,7 +1202,7 @@ abbr, time {
 
 .ValuesUnits p {
   max-width: 20rem;
-  background-image: repeating-linear-gradient(to top, #788f74 0 2px, transparent 2px 1lh);
+  background-image: repeating-linear-gradient(to top, #797339 0 2px, transparent 2px 1lh);
   line-height: 1.8rem;
 }
 
@@ -1174,7 +1369,7 @@ abbr, time {
 .card                 0 - 1 - 0
 */
 .SocialCard {
-  border: 4px solid #788f74;
+  border: 4px solid #797339;
   border-radius: 1.5em;
   width: 22rem;
   max-height: 30rem;
@@ -1278,7 +1473,7 @@ abbr, time {
   width: 18rem;
   height: 14rem;
   background-color: #3e433d;
-  background-image: linear-gradient(to bottom right, transparent 70%, #788f74 180%);
+  background-image: linear-gradient(to bottom right, transparent 70%, #797339 180%);
   font-size: 1.125rem;
   text-align: center;
   box-shadow: 2px 2px 7px rgba(247, 255, 247, 0.3019607843), inset -5px -5px 7px rgba(27, 31, 27, 0.4980392157), inset 5px 5px 7px rgba(247, 255, 247, 0.3019607843);
@@ -1814,8 +2009,8 @@ table.Scope th, table.Headers th {
 }
 
 .School h1 {
-  border-top: 5px solid #788f74;
-  border-bottom: 5px solid #788f74;
+  border-top: 5px solid #797339;
+  border-bottom: 5px solid #797339;
   font: 4rem/1.8 "Quicksad", sans-serif;
   text-align: center;
 }
@@ -1859,7 +2054,7 @@ table.Scope th, table.Headers th {
 }
 
 .School nav a {
-  border: 1px solid #788f74;
+  border: 1px solid #797339;
   padding: 1rem;
 }
 
