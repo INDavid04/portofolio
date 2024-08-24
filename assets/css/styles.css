@@ -445,6 +445,10 @@ a:hover {
 /*  timestamp: 15:10 - TODO: | 08:00-12:00                */
 /*                                                        */
 /**********************************************************/
+.HomePage h2 {
+  text-align: center;
+}
+
 .About {
   width: -moz-fit-content;
   width: fit-content;

@@ -138,6 +138,7 @@ a, .HomeMenuLink, .FooterLink { color: $cta; text-decoration: none; transition: 
 /*                                                        */
 /**********************************************************/
 .HomePage {  }
+    .HomePage h2 { text-align: center; }
     .About { width: fit-content; margin: 2rem auto;
         @media (min-width: 540px) { width: 26rem; }
         @media (min-width: 820px) { display: flex; align-items: center; gap: 2rem; width: 92%; }

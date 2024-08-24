@@ -1,2 +1,2 @@
 # Small Projects
-Visit the site: https://indavid04.netlify.app/
+Visit the site: https://indavid04.github.io/portofolio/
